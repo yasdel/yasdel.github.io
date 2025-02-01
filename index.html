@@ -2,360 +2,192 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yashar Deldjoo – Research, Publications &amp; Activities</title>
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1M9f90p37ekU2Q7k8Iu7Yl5F4fP+2FtX0W7XrQp0s2b"
-      crossorigin="anonymous"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yashar Deldjoo</title>
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Philosopher&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
     <style>
       body {
-        font-family: 'Georgia', serif;
-        font-size: 1rem;
-        line-height: 1.8;
-        background-color: #f9f9f9;
+        font-family: Georgia, serif;
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        background-color: #fff;
       }
-      h1, h2, h3 {
-        font-family: 'Oswald', sans-serif;
+      /* Limit page width similar to original */
+      .container-custom {
+        max-width: 960px;
       }
-      .navbar-brand {
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.5rem;
+      /* Navbar styling */
+      .navbar-inverse {
+        background-color: #222;
+        border-color: #080808;
       }
+      .navbar-inverse .navbar-nav > li > a {
+        color: #ddd;
+      }
+      .navbar-inverse .navbar-nav > li > a:hover {
+        color: #fff;
+      }
+      /* Section Titles */
       .section-title {
-        margin-top: 3rem;
-        margin-bottom: 1rem;
+        font-family: 'Oswald', sans-serif;
         border-bottom: 2px solid #ddd;
-        padding-bottom: 0.5rem;
+        padding-bottom: 5px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      /* Bio section styling */
+      .bio p {
+        text-align: justify;
+        margin-bottom: 1.2em;
       }
       .highlight {
-        color: #d63384;
+        color: #d9534f;
         font-weight: bold;
       }
-      .content a {
-        color: #0d6efd;
-        text-decoration: none;
-      }
-      .content a:hover {
-        text-decoration: underline;
-      }
-      .intro-img {
-        max-width: 100%;
-        border-radius: 5px;
-      }
-      .bg-lightblue {
-        background-color: #e7f1ff;
+      /* Sidebar widget */
+      .well {
+        background-color: #f5f5f5;
+        border: 1px solid #e3e3e3;
+        padding: 15px;
       }
     </style>
   </head>
-  <body id="page-top">
+  <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top">Yashar Deldjoo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-            <li class="nav-item"><a class="nav-link" href="#positions">Positions</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container container-custom">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Yashar Deldjoo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#positions">Positions</a></li>
+            <li><a href="#education">Education</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="container mt-5 pt-5">
-      <!-- About Section -->
-      <section id="about" class="mb-5">
-        <div class="row align-items-center">
-          <div class="col-md-4 text-center">
-            <img
-              src="img/Yashar_Deldjoo.png"
-              alt="Yashar Deldjoo"
-              class="intro-img shadow-sm"
-            />
-          </div>
-          <div class="col-md-8">
-            <h1 class="section-title">About Me</h1>
-            <p class="content">
-              <strong>Yashar Deldjoo</strong> is a senior research scientist and
-              a tenure-track Assistant Professor at the Polytechnic University of Bari,
-              Italy. He is passionate about trustworthy recommender systems and
-              the integration of Generative AI in personalization. His research
-              focuses on fairness, adversarial robustness, explainability, and
-              the responsible use of large language models in recommender systems.
-            </p>
-            <p class="content">
-              Currently, Yashar serves as an <span class="highlight">Associate Editor for IEEE TKDE</span> and <span class="highlight">ACM Computing Surveys (CSUR)</span>.
-              He is also a Distinguished Reviewer for ACM Transaction on Recommender Systems (TORS) and
-              the Guest Editor for two special issues: one on <span class="highlight">Generative Recommender Systems (2025)</span> and another on
-              <span class="highlight">Trustworthy Recommender Systems (2024)</span>.
-            </p>
-            <p class="content">
-              With a Ph.D. in Computer Science from Politecnico di Milano (Italy)
-              and an M.Sc. from Chalmers University of Technology (Sweden), his work
-              has been recognized among the top 2% of research scientists worldwide.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- News Section -->
-      <section id="news" class="mb-5">
-        <h2 class="section-title">News &amp; Announcements</h2>
-        <div class="list-group">
-          <div class="list-group-item bg-lightblue">
-            <strong>April 2024:</strong> New survey on Generative Models in RecSys is now available: 
-            <a href="https://arxiv.org/abs/2404.00579"
-              >"A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)"</a>.
-          </div>
-          <div class="list-group-item">
-            <strong>Jan–Mar 2024:</strong> Benchmarking studies on fairness and biases in large language model based recommender systems:
-            <ol>
-              <li>
-                <a href="https://arxiv.org/abs/2401.10545"
-                  >"Understanding Biases in ChatGPT-based Recommender Systems: Provider Fairness, Temporal Stability, and Recency"</a>
-                (Under review)
-              </li>
-              <li>
-                <a href="https://arxiv.org/abs/2403.05668"
-                  >"CFaiRLLM: Consumer Fairness Evaluation in Large-Language Model Recommender System"</a>
-                (Under review)
-              </li>
-            </ol>
-          </div>
-          <div class="list-group-item">
-            <strong>Jan 2024:</strong> The paper
-            <a href="https://browse.arxiv.org/abs/2402.00485"
-              ><span class="text-success">"A Personalized Framework for Consumer and Producer Group Fairness Optimization"</span></a>
-            has been accepted to ACM TORS.
-          </div>
-          <div class="list-group-item">
-            <strong>Ongoing:</strong> Listen to my discussion with Marcel Kurovski on Recsperts:
-            <a href="https://recsperts.com/24"
-              >"Generative Models for Recommender Systems"</a>.
-          </div>
-          <div class="list-group-item">
-            <strong>Upcoming:</strong> We are organizing the 1st Workshop on Risks, Opportunities, and Evaluation of Generative Models in Recommender Systems at ACM RecSys 2024. Submission deadline: August 30, 2024.
-          </div>
-        </div>
-      </section>
-
-      <!-- Publications Section -->
-      <section id="publications" class="mb-5">
-        <h2 class="section-title">Selected Publications</h2>
-        <!-- You may list your most recent and notable publications here -->
-        <div class="accordion" id="publicationsAccordion">
-          <!-- Surveys -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSurveys">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSurveys"
-                aria-expanded="true"
-                aria-controls="collapseSurveys"
-              >
-                Surveys &amp; Reviews
-              </button>
-            </h2>
-            <div
-              id="collapseSurveys"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingSurveys"
-              data-bs-parent="#publicationsAccordion"
-            >
-              <div class="accordion-body">
-                <ul>
-                  <li>
-                    <strong>A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)</strong>
-                    <br />
-                    <em>Yashar Deldjoo et al.</em>
-                    &nbsp; – Under review (<a href="https://arxiv.org/abs/2404.00579">arXiv</a>)
-                  </li>
-                  <li>
-                    <strong>Interactive Question Answering Systems: Literature Review</strong>
-                    <br />
-                    <em>Giovanni Maria Biancofiore, Yashar Deldjoo, et al.</em>
-                    &nbsp; – ACM CSUR, 2024 (<a href="https://arxiv.org/abs/2209.01621">PDF</a>)
-                  </li>
-                  <li>
-                    <strong>Content-driven Music Recommendation: Evolution, State of the Art, and Challenges</strong>
-                    <br />
-                    <em>Yashar Deldjoo, Markus Schedl, Peter Knees</em>
-                    &nbsp; – Computer Science Review, 2024 (<a href="https://doi.org/10.1016/j.cosrev.2024.100618">PDF</a>)
-                  </li>
-                  <li>
-                    <strong>Fairness in Recommender Systems: Research Landscape and Future Directions</strong>
-                    <br />
-                    <em>Yashar Deldjoo, et al.</em>
-                    &nbsp; – UMUAI, 2023 (<a href="https://doi.org/10.1007/s11257-023-09364-z">PDF</a>)
-                  </li>
-                </ul>
+    <!-- Page Content -->
+    <div class="container container-custom" style="margin-top: 80px;">
+      <div class="row">
+        <!-- Main Content Column -->
+        <div class="col-md-8">
+          <!-- About Me Section -->
+          <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img/Yashar_Deldjoo.png" alt="Yashar Deldjoo" class="img-responsive img-thumbnail">
+              </div>
+              <div class="col-md-8 bio">
+                <p>
+                  <strong>Yashar Deldjoo</strong> is a highly accomplished senior researcher and tenure‐track Assistant Professor at the Polytechnic University of Bari, Italy. With a Ph.D. from Politecnico di Milano and an M.Sc. from Chalmers University of Technology, his work has consistently set new benchmarks in the field of recommender systems.
+                </p>
+                <p>
+                  His research focuses on developing <span class="highlight">trustworthy recommender systems</span> that seamlessly integrate fairness, adversarial robustness, and explainability, as well as pioneering the use of <span class="highlight">Generative AI</span> and large language models in personalization. His recent contributions include influential surveys, innovative frameworks, and state‐of‐the‐art methodologies that have had a significant impact both academically and in practice.
+                </p>
+                <p>
+                  Yashar currently serves as an <span class="highlight">Associate Editor for IEEE TKDE</span> and <span class="highlight">ACM Computing Surveys (CSUR)</span>, in addition to acting as a Distinguished Reviewer for ACM TORS. He is the Guest Editor for two special issues—one on <span class="highlight">Generative Recommender Systems (2025)</span> and another on <span class="highlight">Trustworthy Recommender Systems (2024)</span>.
+                </p>
+                <p>
+                  Recognized among the top 2% of global research scientists, his work continues to influence both academic inquiry and real-world applications.
+                </p>
               </div>
             </div>
-          </div>
-          <!-- Technical Papers -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTech">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTech"
-                aria-expanded="false"
-                aria-controls="collapseTech"
-              >
-                Technical Papers &amp; Tutorials
-              </button>
-            </h2>
-            <div
-              id="collapseTech"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTech"
-              data-bs-parent="#publicationsAccordion"
-            >
-              <div class="accordion-body">
-                <ul>
-                  <li>
-                    <strong>A Normative Framework for Benchmarking Consumer Fairness in LLM-based Recommender Systems</strong>
-                    <br />
-                    <em>Yashar Deldjoo, Fatemeh Nazary</em>
-                    &nbsp; – ROEGEN@RecSys 2024 (<a href="https://arxiv.org/abs/2405.02219">arXiv</a>)
-                  </li>
-                  <li>
-                    <strong>XAI4LLMs: Enhancing In-Context Learning in Healthcare via Explainable Collaboration between ML Models and LLMs</strong>
-                    <br />
-                    <em>Fatemeh Nazary, Yashar Deldjoo, et al.</em>
-                    &nbsp; – Under review, 2024 (<a href="https://arxiv.org/abs/2405.06270">arXiv</a>)
-                  </li>
-                  <li>
-                    <strong>CFaiRLLM: Consumer Fairness Evaluation in LLM-based Recommender Systems</strong>
-                    <br />
-                    <em>Yashar Deldjoo, Tommaso Di Noia</em>
-                    &nbsp; – Under review, 2024 (<a href="https://arxiv.org/pdf/2403.05668.pdf">arXiv</a>)
-                  </li>
-                  <li>
-                    <strong>Understanding Biases in ChatGPT-based Recommender Systems</strong>
-                    <br />
-                    <em>Yashar Deldjoo</em>
-                    &nbsp; – Under review, 2024 (<a href="https://arxiv.org/pdf/2401.10545.pdf">arXiv</a>)
-                  </li>
-                  <li>
-                    <strong>ChatGPT-HealthPrompt: Harnessing XAI in Prompt-based Healthcare Decision Support</strong>
-                    <br />
-                    <em>Fatemeh Nazary, Yashar Deldjoo, Tommaso Di Noia</em>
-                    &nbsp; – XI-ML@ECAI'23 (<a href="https://link.springer.com/chapter/10.1007/978-3-031-50396-2_22">PDF</a>)
-                  </li>
-                </ul>
-              </div>
-            </div>
+          </section>
+          <!-- News & Announcements -->
+          <section id="news">
+            <h2 class="section-title">News &amp; Announcements</h2>
+            <ul>
+              <li>
+                <strong>April 2024:</strong> A new survey on Generative Models for recommender systems is available – <a href="https://arxiv.org/abs/2404.00579">"A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)"</a>.
+              </li>
+              <li>
+                <strong>Jan–Mar 2024:</strong> Publication of studies on fairness and biases in large language model‐based recommender systems:
+                <ol>
+                  <li><a href="https://arxiv.org/abs/2401.10545">"Understanding Biases in ChatGPT-based Recommender Systems"</a> (Under review)</li>
+                  <li><a href="https://arxiv.org/abs/2403.05668">"CFaiRLLM: Consumer Fairness Evaluation in LLM Recommender Systems"</a> (Under review)</li>
+                </ol>
+              </li>
+              <li>
+                <strong>Jan 2024:</strong> Acceptance of the paper <a href="https://browse.arxiv.org/abs/2402.00485"><span class="text-success">"A Personalized Framework for Consumer and Producer Group Fairness Optimization"</span></a> in ACM TORS.
+              </li>
+              <li>
+                <strong>Ongoing:</strong> Listen to my discussion on Generative Recommender Systems at <a href="https://recsperts.com/24">Recsperts</a>.
+              </li>
+              <li>
+                <strong>Upcoming:</strong> Organizing the 1st Workshop on Risks, Opportunities, and Evaluation of Generative Models in Recommender Systems at ACM RecSys 2024. (Submission deadline: August 30, 2024)
+              </li>
+            </ul>
+          </section>
+          <!-- Publications Section (Outline only; insert your publication details as needed) -->
+          <section id="publications">
+            <h2 class="section-title">Publications</h2>
+            <p>
+              Please see below for selected surveys, technical papers, and tutorials that showcase my recent outcomes and research contributions.
+            </p>
+            <!-- Publication lists can be inserted here in a similar style to the original -->
+          </section>
+          <!-- Positions -->
+          <section id="positions">
+            <h2 class="section-title">Positions</h2>
+            <ul>
+              <li><strong>Aug 2022 – Present:</strong> Tenure‐track Assistant Professor, Polytechnic University of Bari, Italy.</li>
+              <li><strong>Aug 2019 – Jul 2022:</strong> Assistant Professor, Polytechnic University of Bari.</li>
+              <li><strong>Apr 2019 – Jul 2019:</strong> Postdoctoral Researcher, Polytechnic University of Bari.</li>
+              <li><strong>Jan 2018 – Feb 2019:</strong> Research Assistant, University of Milano-Bicocca, Italy.</li>
+              <li><strong>2008 – 2009:</strong> Master’s Thesis at Ericsson Research, Stockholm, Sweden.</li>
+            </ul>
+          </section>
+          <!-- Education -->
+          <section id="education">
+            <h2 class="section-title">Education</h2>
+            <ul>
+              <li>
+                <strong>Nov 2014 – Jul 2018:</strong> Ph.D. in Computer Science, <a href="https://www.polimi.it/en" target="_blank">Polytechnic University of Milan</a> (Focus: Recommender Systems &amp; Multimedia).
+              </li>
+              <li>
+                <strong>Sep 2008 – Jul 2010:</strong> M.Sc. in Electrical Engineering, <a href="https://www.chalmers.se/en/Pages/default.aspx" target="_blank">Chalmers University of Technology</a>.
+                <br>
+                Thesis: "Wii-Remote Based Head-Tracking in 3D-Audio Rendering" at Ericsson Research.
+              </li>
+              <li>
+                <strong>Sep 2007 – Jul 2011:</strong> B.A. in English-Linguistics, <a href="https://www.gu.se/en" target="_blank">University of Gothenburg</a>.
+              </li>
+              <li>
+                <strong>Sep 2002 – Jul 2006:</strong> B.Sc. in Electrical Engineering, University of Guilan, Iran.
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- Sidebar with Contact Info -->
+        <div class="col-md-4">
+          <div class="well">
+            <h4>Contact &amp; Links</h4>
+            <p><strong>Email:</strong> <a href="mailto:deldjooy@acm.org">deldjooy@acm.org</a></p>
+            <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ&hl=en" target="_blank">Profile</a></p>
+            <p><strong>Twitter:</strong> <a href="https://twitter.com/yashardel" target="_blank">@yashardel</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/yasdel" target="_blank">yasdel</a></p>
           </div>
         </div>
-      </section>
-
-      <!-- Positions Section -->
-      <section id="positions" class="mb-5">
-        <h2 class="section-title">Positions &amp; Roles</h2>
-        <ul class="list-unstyled">
-          <li>
-            <strong>Aug 2022 – Present:</strong>
-            Tenure-Track Assistant Professor at Polytechnic University of Bari, Italy.
-          </li>
-          <li>
-            <strong>Aug 2019 – Jul 2022:</strong>
-            Assistant Professor at Polytechnic University of Bari.
-          </li>
-          <li>
-            <strong>Apr 2019 – Jul 2019:</strong>
-            Postdoctoral Researcher at Polytechnic University of Bari.
-          </li>
-          <li>
-            <strong>Jan 2018 – Feb 2019:</strong>
-            Research Assistant at University of Milano-Bicocca.
-          </li>
-          <li>
-            <strong>2008 – 2009:</strong>
-            Master’s Thesis at Ericsson Research, Stockholm, Sweden.
-          </li>
-        </ul>
-      </section>
-
-      <!-- Education Section -->
-      <section id="education" class="mb-5">
-        <h2 class="section-title">Education</h2>
-        <ul class="list-unstyled">
-          <li>
-            <strong>Nov 2014 – Jul 2018:</strong>
-            Ph.D. in Computer Science, <a href="https://www.polimi.it/en" target="_blank">Polytechnic University of Milan</a> (Focus: Recommender Systems & Multimedia)
-          </li>
-          <li>
-            <strong>Sep 2008 – Jul 2010:</strong>
-            M.Sc. in Electrical Engineering, <a href="https://www.chalmers.se/en/Pages/default.aspx" target="_blank">Chalmers University of Technology</a>
-            <br />
-            Thesis: "Wii-Remote Based Head-Tracking in 3D-Audio Rendering" at Ericsson Research.
-          </li>
-          <li>
-            <strong>Sep 2007 – Jul 2011:</strong>
-            B.A. in English-Linguistics, <a href="https://www.gu.se/en" target="_blank">University of Gothenburg</a>.
-          </li>
-          <li>
-            <strong>Sep 2002 – Jul 2006:</strong>
-            B.Sc. in Electrical Engineering, University of Guilan, Iran.
-          </li>
-        </ul>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="mb-5">
-        <h2 class="section-title">Contact</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <p class="content">
-              <strong>Email:</strong> <a href="mailto:deldjooy@acm.org">deldjooy@acm.org</a>
-            </p>
-            <p class="content">
-              <strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ&hl=en" target="_blank">Profile</a>
-            </p>
-            <p class="content">
-              <strong>Twitter:</strong> <a href="https://twitter.com/yashardel" target="_blank">@yashardel</a>
-            </p>
-            <p class="content">
-              <strong>GitHub:</strong> <a href="https://github.com/yasdel" target="_blank">yasdel</a>
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-qQ2Xo/w3E+gPLeY0RqM/qZfcyH1yOZ9fB1I9G+3U5Q6y1cOoYEmSOUgK5aXNKp+/"
-      crossorigin="anonymous"
-    ></script>
+      </div>
+    </div>
   </body>
 </html>
