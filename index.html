@@ -3,128 +3,129 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dr. Yashar Deldjoo – Research & Activities</title>
-
+    <title>Dr. Yashar Deldjoo – Senior Researcher &amp; Academic</title>
     <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Custom Styles -->
     <style>
       /* Global Style */
       body {
         font-family: "Lato", sans-serif;
         background-color: #fdfdfd;
         color: #444;
+        line-height: 1.6;
       }
-
       h1,
       h2,
       h3,
       .navbar-brand {
         font-family: "Montserrat", sans-serif;
       }
-
+      a {
+        color: #0056b3;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      /* Container: limit overall width */
+      .container {
+        max-width: 960px;
+      }
       /* Navbar */
       .navbar {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
-
       .navbar-nav .nav-link {
         font-weight: 500;
       }
-
       /* Hero Section */
       .hero {
         background: #2c3e50;
-        color: #ffffff;
-        padding: 100px 0;
+        color: #fff;
+        padding: 80px 0;
         text-align: center;
       }
       .hero h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 600;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
       }
       .hero p.lead {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         max-width: 600px;
         margin: 0 auto;
       }
-
       /* About Section */
       .about-wrapper {
-        margin-top: -60px;
         background-color: #ffffff;
+        padding: 40px 20px;
+        margin-top: -40px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
         border-radius: 8px;
-        padding: 40px 20px;
-        position: relative;
+      }
+      .about-text {
+        text-align: justify;
       }
       .about-photo {
-        max-width: 250px;
+        max-width: 300px;
+        width: 100%;
         border-radius: 6px;
         margin-bottom: 20px;
       }
-      .about-text p {
-        text-align: justify;
-      }
-
-      /* Section Title */
+      /* Section Titles */
       .section-title {
         font-family: "Montserrat", sans-serif;
-        font-size: 2rem;
+        font-size: 1.8rem;
         border-bottom: 3px solid #eee;
-        padding-bottom: 0.25rem;
+        padding-bottom: 0.3rem;
         margin-bottom: 1.5rem;
         margin-top: 2rem;
       }
-
-      /* News & Publications */
-      .news-list,
-      .pub-list {
+      /* Announcements Section (red accent) */
+      .announcements {
+        background-color: #fff5f5;
+        border: 1px solid #f5c2c2;
+        padding: 20px;
+        border-radius: 6px;
+        color: #a94442;
+      }
+      .announcements h4 {
+        color: #a94442;
+      }
+      /* Surveys Section */
+      .survey-list {
         list-style: none;
         padding-left: 0;
       }
-      .news-list li,
-      .pub-list li {
-        margin-bottom: 15px;
+      .survey-list li {
+        margin-bottom: 10px;
       }
-
-      .highlight {
-        color: #d9534f;
-        font-weight: 600;
-      }
-
       /* Footer */
       .footer {
         background: #f8f9fa;
         padding: 20px 0;
+        text-align: center;
+        margin-top: 40px;
       }
-      .footer p {
-        margin: 0;
-      }
-
-      /* Responsive Tweaks */
+      /* Responsive adjustments */
       @media (max-width: 767px) {
         .hero h1 {
           font-size: 2.2rem;
         }
         .hero p.lead {
-          font-size: 1.1rem;
+          font-size: 1rem;
         }
       }
     </style>
   </head>
-
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -141,24 +142,15 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#news">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#publications">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#positions">Positions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#announcements">Announcements</a></li>
+            <li class="nav-item"><a class="nav-link" href="#surveys">Surveys</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#positions">Positions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -169,105 +161,127 @@
       <div class="container">
         <h1>Dr. Yashar Deldjoo</h1>
         <p class="lead">
-          Senior Research Scientist &amp; Assistant Professor | Trusted AI &amp; Generative Recommender Systems
+          Senior Research Scientist &amp; Assistant Professor in Trustworthy AI and Generative Recommender Systems
         </p>
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT SECTION (Photo on Right) -->
     <section id="about">
       <div class="container about-wrapper">
         <div class="row align-items-center">
-          <div class="col-md-3 text-center">
+          <!-- Text Column -->
+          <div class="col-md-8">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+              I am a tenure-track Assistant Professor at the Polytechnic University of Bari, Italy, and a senior research scientist working at the nexus of <strong>Trustworthy AI</strong> and <strong>Generative Recommender Systems</strong>. Recognized among the top 2% of research scientists worldwide (per Stanford University's Ioannidis database), my work focuses on incorporating fairness, adversarial robustness, and explainability into next-generation recommendation frameworks.
+            </p>
+            <p class="about-text">
+              I serve as an <strong>Associate Editor</strong> for IEEE TKDE and ACM Computing Surveys (CSUR), and as a Distinguished Reviewer for ACM Transactions on Recommender Systems (TORS). I am the Guest Editor for two TORS special issues on <strong>Generative RecSys (2025)</strong> and <strong>Trustworthy RecSys (2024)</strong>. My recent endeavors include influential surveys, pioneering technical contributions, and initiatives examining the societal impacts of large language models in recommendation.
+            </p>
+          </div>
+          <!-- Photo Column -->
+          <div class="col-md-4 text-center">
             <img
               src="img/Yashar_Deldjoo.png"
-              alt="Portrait of Dr. Yashar Deldjoo"
+              alt="Dr. Yashar Deldjoo"
               class="about-photo img-fluid"
             />
-          </div>
-          <div class="col-md-9 about-text">
-            <h2 class="section-title">About Me</h2>
-            <p>
-              I am a tenure-track Assistant Professor at the Polytechnic University of Bari, Italy, and a senior research scientist working at the intersection of
-              <strong>Trustworthy AI</strong> and <strong>Generative Recommender Systems (GenRecSys)</strong>. 
-              My research focuses on embedding crucial AI principles—fairness, adversarial robustness, and explainability—into next-generation recommender systems. 
-              In 2023 and 2024, I was recognized among the top 2% of research scientists worldwide (Stanford University's Ioannidis database).
-            </p>
-            <p>
-              Currently, I serve as an <span class="highlight">Associate Editor for IEEE TKDE</span> and <span class="highlight">ACM Computing Surveys (CSUR)</span>, 
-              and I am a Distinguished Reviewer at ACM Transactions on Recommender Systems (TORS). I am also the Guest Editor for two TORS Special Issues on <span class="highlight">Generative RecSys (2025)</span> and <span class="highlight">Trustworthy RecSys (2024)</span>. 
-              My recent projects investigate the opportunities and risks posed by large language models (LLMs) in recommendation scenarios, exploring how generative technology can shape future personalization methods and address societal concerns.
-            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- NEWS SECTION -->
-    <section id="news" class="py-5">
+    <!-- ANNOUNCEMENTS SECTION (Red Accent) -->
+    <section id="announcements" class="py-4">
       <div class="container">
-        <h2 class="section-title">Recent News &amp; Highlights</h2>
-        <ul class="news-list">
+        <h2 class="section-title">Announcements</h2>
+        <div class="announcements">
+          <h4>Upcoming Workshop &amp; New Initiatives</h4>
+          <ul>
+            <li>
+              <strong>Workshop Announcement:</strong> I am co-organizing the 1st Workshop on Risks, Opportunities, and Evaluation of Generative Models (ROEGEN) at ACM RecSys 2024. 
+              <em>(Submission deadline: August 30, 2024)</em>
+            </li>
+            <li>
+              <strong>Podcast:</strong> Listen to my in-depth discussion on Generative Models for Recommender Systems at 
+              <a href="https://recsperts.com/24" target="_blank">Recsperts</a>.
+            </li>
+            <li>
+              <strong>Book Announcement:</strong> My forthcoming book on Generative AI in recommendation, 
+              <em>"Recommendation with Generative Models,"</em> will be published in 2024–2025.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SURVEYS SECTION -->
+    <section id="surveys" class="py-4">
+      <div class="container">
+        <h2 class="section-title">Surveys</h2>
+        <ul class="survey-list">
           <li>
-            <strong>April 2024:</strong> Our newest survey on generative models for recommender systems is live. 
-            <a href="https://arxiv.org/abs/2404.00579">A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)</a>.
+            <strong>A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)</strong> – <em>Under review</em> (<a href="https://arxiv.org/abs/2404.00579" target="_blank">arXiv</a>)
           </li>
           <li>
-            <strong>Jan–Mar 2024:</strong> Check out our benchmarking studies on <em>fairness</em> in LLM-based recommendations:
+            <strong>Interactive Question Answering Systems: Literature Review</strong> – ACM CSUR, 2024 (<a href="https://arxiv.org/abs/2209.01621" target="_blank">PDF</a>)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section id="news" class="py-4">
+      <div class="container">
+        <h2 class="section-title">News &amp; Updates</h2>
+        <ul class="survey-list">
+          <li>
+            <strong>Jan–Mar 2024:</strong> Benchmarking studies on fairness in LLM-based recommender systems:
             <ol>
               <li>
-                <a href="https://arxiv.org/abs/2401.10545">Understanding Biases in ChatGPT-based Recommender Systems</a>
+                <a href="https://arxiv.org/abs/2401.10545" target="_blank">Understanding Biases in ChatGPT-based Recommender Systems</a>
               </li>
               <li>
-                <a href="https://arxiv.org/abs/2403.05668">CFaiRLLM: Consumer Fairness Evaluation in LLM-based Recommender Systems</a>
+                <a href="https://arxiv.org/abs/2403.05668" target="_blank">CFaiRLLM: Consumer Fairness Evaluation in LLM-based Recommender Systems</a>
               </li>
             </ol>
           </li>
           <li>
-            <strong>Jan 2024:</strong> Accepted to ACM TORS:
-            <a href="https://browse.arxiv.org/abs/2402.00485">
-              A Personalized Framework for Consumer and Producer Group Fairness Optimization
-            </a>.
-          </li>
-          <li>
-            <strong>Podcast Alert:</strong> Hear my conversation at Recsperts on 
-            <a href="https://recsperts.com/24">Generative Models for Recommender Systems</a> — we tackle LLMs, fairness, risk, and more.
-          </li>
-          <li>
-            <strong>Upcoming:</strong> I’m co-organizing the 1st Workshop on Risks, Opportunities, and Evaluation of Generative Models (ROEGEN) at ACM RecSys 2024 (Deadline: Aug 30, 2024).
+            <strong>Jan 2024:</strong> Paper <a href="https://browse.arxiv.org/abs/2402.00485" target="_blank">A Personalized Framework for Consumer and Producer Group Fairness Optimization</a> accepted to ACM TORS.
           </li>
         </ul>
       </div>
     </section>
 
     <!-- PUBLICATIONS SECTION -->
-    <section id="publications" class="py-5">
+    <section id="publications" class="py-4">
       <div class="container">
         <h2 class="section-title">Selected Publications</h2>
         <div class="row">
           <div class="col-md-6">
             <h4>Surveys &amp; Reviews</h4>
-            <ul class="pub-list">
+            <ul class="survey-list">
               <li>
                 <strong>A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)</strong><br />
-                <em>Y. Deldjoo et al.</em> – Under review (<a href="https://arxiv.org/abs/2404.00579">arXiv</a>)
+                <em>Y. Deldjoo et al.</em> – Under review (<a href="https://arxiv.org/abs/2404.00579" target="_blank">arXiv</a>)
               </li>
               <li>
                 <strong>Interactive Question Answering Systems: Literature Review</strong><br />
-                <em>G. M. Biancofiore, Y. Deldjoo, et al.</em> – ACM CSUR (2024)
+                <em>G. M. Biancofiore, Y. Deldjoo, et al.</em> – ACM CSUR, 2024 (<a href="https://arxiv.org/abs/2209.01621" target="_blank">PDF</a>)
               </li>
             </ul>
           </div>
           <div class="col-md-6">
             <h4>Recent Technical Papers</h4>
-            <ul class="pub-list">
+            <ul class="survey-list">
               <li>
                 <strong>A Normative Framework for Benchmarking Consumer Fairness in LLM-based Recommender Systems</strong><br />
                 <em>Y. Deldjoo, F. Nazary</em> – ROEGEN@RecSys 2024
               </li>
               <li>
                 <strong>CFaiRLLM: Consumer Fairness Evaluation in LLM-based Recommender Systems</strong><br />
-                <em>Y. Deldjoo, T. Di Noia</em> – Under review (2024)
+                <em>Y. Deldjoo, T. Di Noia</em> – Under review, 2024
               </li>
               <li>
                 <strong>ChatGPT-HealthPrompt: XAI-driven Healthcare Decision Support</strong><br />
@@ -280,10 +294,10 @@
     </section>
 
     <!-- POSITIONS SECTION -->
-    <section id="positions" class="py-5 bg-light">
+    <section id="positions" class="py-4 bg-light">
       <div class="container">
         <h2 class="section-title">Positions &amp; Roles</h2>
-        <ul class="list-unstyled">
+        <ul class="survey-list">
           <li>
             <strong>Tenure-track Assistant Professor</strong> – Polytechnic University of Bari, Italy (2022–present)
           </li>
@@ -301,37 +315,28 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-4">
       <div class="container">
         <h2 class="section-title">Contact &amp; Links</h2>
         <div class="row">
           <div class="col-md-6">
+            <p><strong>Email:</strong> <a href="mailto:deldjooy@acm.org">deldjooy@acm.org</a></p>
             <p>
-              <strong>Email:</strong> 
-              <a href="mailto:deldjooy@acm.org">deldjooy@acm.org</a>
+              <strong>Google Scholar:</strong>
+              <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank">Profile</a>
             </p>
             <p>
-              <strong>Google Scholar:</strong> 
-              <a
-                href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ"
-                target="_blank"
-                >Profile</a
-              >
-            </p>
-            <p>
-              <strong>Twitter:</strong> 
+              <strong>Twitter:</strong>
               <a href="https://twitter.com/yashardel" target="_blank">@yashardel</a>
             </p>
             <p>
-              <strong>GitHub:</strong> 
-              <a href="https://github.com/yasdel" target="_blank"
-                >github.com/yasdel</a
-              >
+              <strong>GitHub:</strong>
+              <a href="https://github.com/yasdel" target="_blank">github.com/yasdel</a>
             </p>
           </div>
           <div class="col-md-6">
             <h4>Education</h4>
-            <ul class="list-unstyled">
+            <ul class="survey-list">
               <li>
                 <strong>Ph.D. in Computer Science</strong> – Politecnico di Milano (2014–2018)
               </li>
@@ -351,20 +356,18 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer text-center">
+    <footer class="footer">
       <div class="container">
-        <p class="mb-0">
-          &copy; <span id="currentYear"></span> Dr. Yashar Deldjoo. All rights reserved.
-        </p>
+        <p>&copy; <span id="currentYear"></span> Dr. Yashar Deldjoo. All rights reserved.</p>
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap JS Bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     ></script>
     <script>
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
