@@ -15,11 +15,13 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
     }
+    /* Main container constraints */
     .container {
       max-width: 1100px;
       margin: 0 auto;
       padding: 20px;
     }
+    /* Header name style */
     .header-name {
       font-size: 2rem;
       font-weight: bold;
@@ -28,6 +30,7 @@
       font-size: 1.2rem;
       color: #555;
     }
+    /* Section headings with red left border */
     .section-heading {
       font-size: 1.3rem;
       font-weight: 600;
@@ -36,23 +39,28 @@
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
+    /* Bio text alignment */
     .short-bio {
       text-align: justify;
     }
+    /* Photo style: slightly bigger on the right */
     .profile-photo {
-      width: 100%;
       max-width: 300px;
+      width: 100%;
       border-radius: 5px;
-      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-top: 20px; /* Adjusting image position */
     }
+    /* Column boxes with subtle border or background if desired */
     .info-box {
       background-color: #fafafa;
       border: 1px solid #eee;
       border-radius: 5px;
       padding: 15px;
       margin-bottom: 1rem;
-      min-height: 250px; /* helps keep columns aligned */
+      min-height: 250px; /* optional to keep columns similar height */
     }
+    /* Footer style */
     .footer {
       margin-top: 3rem;
       padding-top: 1rem;
@@ -68,9 +76,6 @@
       .ms-auto, .me-3 {
         margin: 0 !important;
       }
-      .profile-photo {
-        margin-bottom: 20px;
-      }
     }
   </style>
 </head>
@@ -81,22 +86,21 @@
   <div class="row mt-4">
     <div class="col-md-8">
       <div class="header-name">Dr. Yashar Deldjoo</div>
-      <div class="header-title">
-        Senior Researcher &amp; Assistant Professor, Polytechnic University of Bari
-      </div>
+      <div class="header-title">Senior Researcher &amp; Assistant Professor, Polytechnic University of Bari</div>
       <p class="short-bio mt-3">
-        Dr. Yashar Deldjoo is a tenure-track Assistant Professor in Computer Science at the Polytechnic University of Bari, Italy, recognized among the top 2% of research scientists worldwide (Stanford’s Ioannidis database). His core expertise lies in integrating <strong>fairness, adversarial robustness, and explainability</strong> with advanced <strong>generative models</strong>, focusing on their application within Recommender Systems (RecSys) and downstream machine learning tasks. 
-
-        Currently, Dr. Deldjoo’s work is centered on <strong>Generative RecSys</strong>—including his KDD contributions and a forthcoming book <em>“Recommendation with Generative Models”</em>—investigating both the potential and pitfalls of large language models (LLMs). His research also delves into identifying risks and hazards (e.g., hallucinations, randomness, bias) while developing new evaluation metrics to ensure robust, reliable, and trustworthy AI experiences.
-
-        Beyond research, Dr. Deldjoo is an <strong>Associate Editor</strong> for IEEE TKDE and ACM Computing Surveys (CSUR), and a Distinguished Reviewer for ACM TORS. He is also the Guest Editor for TORS special issues on <em>Generative RecSys (2025)</em> and <em>Trustworthy RecSys (2024)</em>. He actively serves as a <strong>Senior Program Committee (SPC)</strong> member for top-tier venues including SIGIR, CIKM, ECAI, TheWebConf, and ACM RecSys.
+        Dr. Yashar Deldjoo is a tenure-track Assistant Professor at the Polytechnic University of Bari, Italy, and a senior research scientist specializing in <strong>Trustworthy AI</strong> and <strong>Generative Recommender Systems (GenRecSys)</strong>. 
+        Currently, his research is highly focused on the application of generative models within recommender systems and other downstream machine learning applications, including the development of evaluation metrics for AI systems. He is particularly interested in identifying and mitigating the risks and hazards associated with these models, including hallucination, randomness, and bias. 
+        His recent work has been featured in major venues, including KDD and ACM CSUR, as well as his forthcoming book, <em>"Recommendation with Generative Models"</em>, scheduled for publication in 2024–2025.
+      </p>
+      <p class="short-bio">
+        Dr. Deldjoo currently serves as an <strong>Associate Editor</strong> for IEEE TKDE and ACM Computing Surveys (CSUR), and is a Distinguished Reviewer for ACM Transactions on Recommender Systems (TORS). He is also a Senior Program Committee (SPC) member for top-tier conferences such as <strong>SIGIR, CIKM, WebConf</strong>, and <strong>ECAI</strong>. His research interests cover generative models, fairness, adversarial robustness, explainability, and the broader impacts of AI systems.
       </p>
     </div>
     <div class="col-md-4 text-md-end text-center">
       <img
         src="img/Yashar_Deldjoo.png"
         alt="Dr. Yashar Deldjoo"
-        class="profile-photo"
+        class="profile-photo mt-3"
       />
     </div>
   </div>
@@ -107,16 +111,16 @@
       <h2 class="section-heading">Research</h2>
       <div class="info-box">
         <p>
-          My research centers on designing and evaluating <strong>reliable and trustworthy Artificial Intelligence (AI)</strong> models, with a special emphasis on:
+          My research centers on the intersection of <strong>Generative Models</strong>, <strong>Recommender Systems</strong>, and <strong>Trustworthy AI</strong>, with a focus on:
         </p>
         <ul>
-          <li>Adversarial robustness &amp; attack defense</li>
-          <li>Fairness &amp; equity in recommendations</li>
-          <li>Explainability &amp; interpretability</li>
-          <li>Generative AI &amp; large language models</li>
+          <li>Development of trustworthy AI systems for recommender applications</li>
+          <li>Building robust evaluation metrics for generative models in ML</li>
+          <li>Understanding the risks of generative models: hallucination, randomness, and bias</li>
+          <li>Integrating fairness, adversarial robustness, and explainability into AI systems</li>
         </ul>
         <p>
-          I strive to bridge theoretical rigor with real-world applications, ensuring AI systems remain both innovative and socially responsible.
+          My work seeks to create models that are not only innovative but also safe, explainable, and fair, particularly in the domain of recommender systems.
         </p>
       </div>
     </div>
@@ -125,18 +129,18 @@
       <div class="info-box">
         <ul>
           <li>
-            <strong>New Book:</strong> “Recommendation with Generative Models” (FntIR 2024–2025)
+            <strong>Book Forthcoming:</strong> <em>"Recommendation with Generative Models"</em> (FnTIR 2024–2025)
           </li>
           <li>
-            <strong>Workshop:</strong> Co-organizing 
-            <em>ROEGEN @ ACM RecSys 2024</em> (Risks &amp; Opportunities of Generative Models)
+            <strong>New Workshop:</strong> Co-organizing 
+            <em>ROEGEN: 1st Workshop on Risks, Opportunities, and Evaluation of Generative Models</em> at ACM RecSys 2024
           </li>
           <li>
             <strong>Podcast:</strong> Interview on Generative RecSys at 
             <a href="https://recsperts.com/24" target="_blank">Recsperts</a>
           </li>
           <li>
-            <strong>Stanford Ranking:</strong> Top 2% (2023 &amp; 2024)
+            <strong>Stanford Ranking:</strong> Top 2% of scientists globally (2023, 2024)
           </li>
         </ul>
       </div>
@@ -145,84 +149,50 @@
       <h2 class="section-heading">Note to Students</h2>
       <div class="info-box">
         <p>
-          I welcome inquiries from motivated students and post-docs interested in exploring:
+          I am looking for motivated students and post-docs interested in researching the technical, ethical, and practical dimensions of AI, especially in:
         </p>
         <ul>
           <li>Generative Recommender Systems</li>
-          <li>Trust &amp; Ethics in AI/ML</li>
-          <li>Risk Assessment &amp; Evaluation Metrics</li>
+          <li>Trust, Safety, and Fairness in AI</li>
+          <li>Adversarial Attacks &amp; Defense Mechanisms</li>
         </ul>
         <p>
-          Please contact me if you share a passion for pioneering research at the intersection of AI theory and practice.
+          If you are passionate about these areas, I encourage you to reach out and discuss possible research opportunities.
         </p>
       </div>
     </div>
   </div>
 
-  <!-- Publications section -->
-  <div class="row mt-4">
+  <!-- Publications Section -->
+  <div class="row">
     <div class="col-md-12">
       <h2 class="section-heading">Publications</h2>
-      <p>Below are select examples. For a complete list, see my <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank">Google Scholar</a>.</p>
-
-      <!-- Most impactful publication(s) -->
-      <h4>Most Impactful Publication</h4>
+      <h3>Selected Technical Papers</h3>
       <ul>
         <li>
           <strong>A Personalized Framework for Consumer and Producer Group Fairness Optimization</strong><br />
-          <em>H. A. Rahmani, M. Naghiaei, Y. Deldjoo</em> – <strong>ACM TORS (2024)</strong>.  
-          This work proposes a robust approach to balancing fairness across various user and item groups, paving the way for more equitable recommender systems.
+          <em>Y. Deldjoo, H. A. Rahmani</em> – ACM Transactions on Recommender Systems (TORS), 2024
+        </li>
+        <li>
+          <strong>CFaiRLLM: Consumer Fairness Evaluation in LLM-based Recommender Systems</strong><br />
+          <em>Y. Deldjoo, T. Di Noia</em> – Under review (2024)
+        </li>
+        <li>
+          <strong>Understanding Biases in ChatGPT-based Recommender Systems</strong><br />
+          <em>Y. Deldjoo</em> – Under review (2024)
         </li>
       </ul>
 
-      <!-- Tutorials & Surveys subsection -->
-      <h4>Tutorials &amp; Surveys</h4>
+      <h3>Surveys</h3>
       <ul>
         <li>
-          <strong>A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)</strong> (Under review)<br />
-          <em>Y. Deldjoo et al.</em> – <a href="https://arxiv.org/abs/2404.00579" target="_blank">arXiv</a>
+          <strong>A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)</strong><br />
+          <em>Y. Deldjoo et al.</em> – Under review (<a href="https://arxiv.org/abs/2404.00579" target="_blank">arXiv</a>)
         </li>
         <li>
-          <strong>Interactive Question Answering Systems: Literature Review</strong> (ACM CSUR, 2024)<br />
-          <em>G. M. Biancofiore, Y. Deldjoo, et al.</em>
+          <strong>Interactive Question Answering Systems: Literature Review</strong><br />
+          <em>G. M. Biancofiore, Y. Deldjoo, et al.</em> – ACM CSUR (2024)
         </li>
-        <li>
-          <strong>ChatGPT-HealthPrompt: XAI-driven Healthcare Decision Support</strong> (XI-ML@ECAI’23)<br />
-          <em>F. Nazary, Y. Deldjoo, T. Di Noia</em>
-        </li>
-        <li>
-          <strong>Adversarial Learning for Recommendation</strong> (Tutorial Series)<br />
-          <em>Y. Deldjoo, et al.</em> – Presented at WSDM, RecSys, and ECIR in 2020–2021
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Additional Sections (Education, Professional Activities, Editorships, SPC) -->
-  <div class="row mt-4">
-    <div class="col-md-12">
-      <h2 class="section-heading">Education</h2>
-      <ul>
-        <li>Ph.D. in Computer Science, Politecnico di Milano (2014–2018)</li>
-        <li>M.Sc. in Electrical Engineering, Chalmers University of Technology (2008–2010)</li>
-        <li>B.A. in English-Linguistics, University of Gothenburg (2007–2011)</li>
-        <li>B.Sc. in Electrical Engineering, University of Guilan (2002–2006)</li>
-      </ul>
-
-      <h2 class="section-heading">Professional Activities</h2>
-      <ul>
-        <li><strong>Aug 2022 – Present:</strong> Tenure-track Assistant Professor, Polytechnic University of Bari, Italy</li>
-        <li><strong>Aug 2019 – Jul 2022:</strong> Assistant Professor (RtD-A), Polytechnic University of Bari</li>
-        <li><strong>Apr 2019 – Jul 2019:</strong> Postdoctoral Researcher, Polytechnic University of Bari</li>
-        <li><strong>Jan 2018 – Feb 2019:</strong> Research Assistant, University of Milano-Bicocca</li>
-      </ul>
-
-      <h2 class="section-heading">Editorial &amp; Service Roles</h2>
-      <ul>
-        <li><strong>Associate Editor:</strong> IEEE TKDE, ACM Computing Surveys (CSUR)</li>
-        <li><strong>Distinguished Reviewer:</strong> ACM Transactions on Recommender Systems (TORS)</li>
-        <li><strong>Guest Editor:</strong> TORS Special Issue on Trustworthy RecSys (2024) &amp; Generative RecSys (2025)</li>
-        <li><strong>Senior Program Committee:</strong> SIGIR, CIKM, ECAI, TheWebConf, ACM RecSys</li>
       </ul>
     </div>
   </div>
