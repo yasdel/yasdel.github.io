@@ -13,7 +13,8 @@
       background-color: #fff;
       color: #333;
       font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-size: 0.95em; /* Slightly smaller font */
+      line-height: 1.45;
     }
     .container {
       max-width: 1100px;
@@ -21,23 +22,25 @@
       padding: 20px;
     }
     .header-name {
-      font-size: 2rem;
+      font-size: 1.9rem;
       font-weight: bold;
+      margin-bottom: 0.2rem;
     }
     .header-title {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #555;
     }
     .section-heading {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 600;
       border-left: 4px solid #d9534f; /* Red accent */
       padding-left: 10px;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       margin-bottom: 1rem;
     }
     .short-bio {
       text-align: justify;
+      margin-top: 0.8rem;
     }
     /* Slightly bring photo down, enlarge it */
     .profile-photo {
@@ -55,12 +58,19 @@
       min-height: 250px; /* helps keep columns aligned */
     }
     .footer {
-      margin-top: 3rem;
+      margin-top: 2.5rem;
       padding-top: 1rem;
       border-top: 1px solid #ddd;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       text-align: center;
       color: #666;
+    }
+    a.red-link {
+      color: #d9534f; /* Red links for emphasis */
+      text-decoration: none;
+    }
+    a.red-link:hover {
+      text-decoration: underline;
     }
     @media(max-width: 767px){
       .profile-photo {
@@ -79,12 +89,14 @@
       <div class="header-title">
         Senior Researcher &amp; Assistant Professor, Polytechnic University of Bari
       </div>
-      <p class="short-bio mt-3">
-        Dr. Yashar Deldjoo is a senior research scientist and a tenure-track Assistant Professor in Computer Science at the Polytechnic University of Bari, Italy. He is recognized among the top 2% of research scientists worldwide in 2023-2024 (Stanford’s Ioannidis database). His expertise centers on integrating elements of <strong>trustworthy and responsible AI</strong> (e.g., fairness, adversarial robustness, and security) into recommender systems with a recent focus highly centered on <strong>generative models</strong>.
-        <br><br>
-        Currently, research under Dr. Deldjoo’s lab focuses on <strong>Recommendation with Generative Models (Gen-RecSys)</strong>—see e.g., the KDD'24 survey a forthcoming book <em>“Recommendation with Generative Models”</em>. In particular, currently, his research focuses on investigating both the potential and hazards of large language models (LLMs) (e.g., hallucinations, randomness, bias) in downstream RecSys and ML applications. To address these risks, he develops novel evaluation metrics and methods to ensure robust, trustworthy AI experiences. 
-        <br><br>
-        He has recently shared insights into Generative RecSys on the <strong>Recsperts Podcast</strong>, discussing the ethical and technical challenges of next-generation recommender systems. Beyond research, Dr. Deldjoo is an <strong>Associate Editor</strong> for IEEE TKDE and ACM Computing Surveys (CSUR), a Distinguished Reviewer for ACM TORS, and a <strong>Guest Editor</strong> for TORS special issues on <em>Generative RecSys (2025)</em> and <em>Trustworthy RecSys (2024)</em>. He actively serves as a <strong>Senior Program Committee (SPC)</strong> member for top-tier venues, including SIGIR, CIKM, ECAI, TheWebConf, and ACM RecSys.
+      <p class="short-bio">
+        Dr. Yashar Deldjoo is a senior research scientist and a tenure-track Assistant Professor in Computer Science at the Polytechnic University of Bari, Italy. He is recognized among the top 2% of research scientists worldwide in 2023–2024 (Stanford’s Ioannidis database). His expertise centers on integrating trustworthy and responsible AI principles (e.g., fairness, adversarial robustness, security) into recommender systems, with a strong emphasis on <strong>generative models</strong>.
+        Currently, his lab focuses on <strong>Recommendation with Generative Models (Gen-RecSys)</strong>—see, for instance, the 
+        <a href="#" class="red-link">KDD’24 survey</a>
+        and the forthcoming book <a href="#" class="red-link">“Recommendation with Generative Models”</a>. He investigates both the potential and hazards of large language models (LLMs)—like hallucinations, randomness, and bias—in downstream RecSys and ML tasks, developing novel evaluation metrics to ensure robust, trustworthy AI experiences.
+        He recently shared insights on Generative RecSys in a
+        <a href="#" class="red-link">Recsperts Podcast</a>, discussing the ethical and technical challenges of next-generation recommender systems.
+        Dr. Deldjoo is an Associate Editor for IEEE TKDE and ACM Computing Surveys (CSUR), a Distinguished Reviewer for ACM TORS, and a Guest Editor for TORS special issues on <em>Generative RecSys (2025)</em> and <em>Trustworthy RecSys (2024)</em>. He also serves as a Senior Program Committee (SPC) member for top-tier venues including SIGIR, CIKM, ECAI, TheWebConf, and ACM RecSys.
       </p>
     </div>
     <div class="col-md-4 text-md-end text-center">
@@ -102,16 +114,16 @@
       <h2 class="section-heading">Research</h2>
       <div class="info-box">
         <p>
-          My research investigates the development of <strong>reliable and trustworthy AI</strong> in Recommender Systems, emphasizing:
+          I focus on designing <strong>reliable and trustworthy AI</strong> for Recommender Systems, emphasizing:
         </p>
         <ul>
           <li>Adversarial robustness &amp; attack defense</li>
           <li>Fairness &amp; equity in recommendations</li>
           <li>Explainability &amp; interpretability</li>
-          <li>Generative AI &amp; large language models</li>
+          <li>Generative AI &amp; LLMs</li>
         </ul>
         <p>
-          I combine theoretical models with real-world experimentation to ensure AI systems remain both pioneering and societally responsible.
+          My goal is to merge theoretical developments with real-world experimentation for advanced, socially responsible AI.
         </p>
       </div>
     </div>
@@ -120,15 +132,15 @@
       <div class="info-box">
         <ul>
           <li>
-            <strong>New Book:</strong> “Recommendation with Generative Models” (FntIR 2024–2025)
+            <strong>New Book:</strong> “Recommendation with Generative Models” (FnTIR 2024–2025)
           </li>
           <li>
             <strong>Workshop:</strong> Co-organizing 
             <em>ROEGEN @ ACM RecSys 2024</em> (Risks &amp; Opportunities of Generative Models)
           </li>
           <li>
-            <strong>Podcast:</strong> Shared expertise on 
-            <a href="https://recsperts.com/24" target="_blank">Recsperts</a> (Generative RecSys)
+            <strong>Podcast:</strong> Insights on 
+            <a href="#" class="red-link">Recsperts</a> (Generative RecSys)
           </li>
           <li>
             <strong>Stanford Ranking:</strong> Top 2% (2023 &amp; 2024)
@@ -140,7 +152,7 @@
       <h2 class="section-heading">Note to Students</h2>
       <div class="info-box">
         <p>
-          I welcome inquiries from motivated students and post-docs interested in:
+          I welcome inquiries from motivated students and post-docs in:
         </p>
         <ul>
           <li>Generative Recommender Systems</li>
@@ -148,7 +160,7 @@
           <li>Risk Assessment &amp; Evaluation Metrics</li>
         </ul>
         <p>
-          Please contact me if you share a passion for combining theoretical rigor with applied innovation in AI.
+          Contact me if you share a passion for fusing theory with applied innovation in AI.
         </p>
       </div>
     </div>
@@ -161,217 +173,27 @@
       <ul>
         <li><strong>Associate Editor:</strong> IEEE TKDE, ACM Computing Surveys (CSUR)</li>
         <li><strong>Distinguished Reviewer:</strong> ACM Transactions on Recommender Systems (TORS)</li>
-        <li><strong>Guest Editor:</strong> TORS Special Issue on Trustworthy RecSys (2024) &amp; Generative RecSys (2025)</li>
+        <li><strong>Guest Editor:</strong> TORS Special Issues on Trustworthy RecSys (2024) &amp; Generative RecSys (2025)</li>
         <li><strong>Senior Program Committee:</strong> SIGIR, CIKM, ECAI, TheWebConf, ACM RecSys</li>
       </ul>
     </div>
   </div>
 
-  <!-- Publications section (comprehensive) -->
+  <!-- Publications section (short sample) -->
   <div class="row mt-4">
     <div class="col-md-12">
       <h2 class="section-heading">Publications</h2>
-      <p>Below is a comprehensive selection of my work. For the full list, see my <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank">Google Scholar</a> profile.</p>
+      <p>Below is a brief selection. For more, see my <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank">Google Scholar</a>.</p>
 
-      <!-- 1) Most Impactful Publications -->
       <h4>Most Impactful Publications</h4>
       <ul>
         <li>
           <strong>A Personalized Framework for Consumer and Producer Group Fairness Optimization</strong><br />
-          <em>H. A. Rahmani, M. Naghiaei, Y. Deldjoo</em> – <strong>ACM TORS (2024)</strong>  
-          <br>This work proposes a robust approach to balancing fairness across diverse user and item groups.
+          <em>H. A. Rahmani, M. Naghiaei, Y. Deldjoo</em> – <strong>ACM TORS (2024)</strong>
         </li>
         <li>
           <strong>ChatGPT-HealthPrompt: XAI-driven Healthcare Decision Support</strong><br />
-          <em>F. Nazary, Y. Deldjoo, T. Di Noia</em> – <strong>XI-ML@ECAI’23</strong>  
-          <br>Explores leveraging LLM-based approaches for clinical recommendations with a focus on interpretability and safety.
-        </li>
-      </ul>
-
-      <!-- 2) Surveys -->
-      <h4>Surveys</h4>
-      <ul>
-        <li>
-          <strong>A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)</strong><br />
-          <em>Y. Deldjoo et al.</em> – Under Review 
-          &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2404.00579" target="_blank">arXiv</a>
-        </li>
-        <li>
-          <strong>Interactive Question Answering Systems: Literature Review</strong><br />
-          <em>G. M. Biancofiore, Y. Deldjoo, et al.</em> – <strong>ACM CSUR, 2024</strong> 
-          &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2209.01621" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Content-driven Music Recommendation: Evolution, State of the Art, and Challenges</strong><br />
-          <em>Y. Deldjoo, M. Schedl, P. Knees</em> – <strong>Computer Science Review (CS-Review), 2024</strong> 
-          &nbsp;|&nbsp; <a href="https://doi.org/10.1016/j.cosrev.2024.100618" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>A Review of Modern Fashion Recommender Systems</strong><br />
-          <em>Y. Deldjoo et al.</em> – <strong>ACM CSUR, 2023</strong> 
-          &nbsp;|&nbsp; <a href="https://doi.org/10.1145/3624733" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Fairness in Recommender Systems: Research Landscape and Future Directions</strong><br />
-          <em>Y. Deldjoo et al.</em> – <strong>UMUAI, 2023</strong> 
-          &nbsp;|&nbsp; <a href="https://doi.org/10.1007/s11257-023-09364-z" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>A Survey on Adversarial Recommender Systems</strong><br />
-          <em>Y. Deldjoo, T. Di Noia, F. A. Merra</em> – <strong>ACM CSUR, 2022</strong>
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/abs/10.1145/3439729" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Recommender System Leveraging Multimedia Content</strong><br />
-          <em>Y. Deldjoo et al.</em> – <strong>ACM CSUR, 2021</strong>
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/abs/10.1145/3407190" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Current challenges and visions in music recommender systems research</strong><br />
-          <em>M. Schedl, H. Zamani, C-W Chen, Y. Deldjoo, M. Elahi</em> – <strong>IJMIR, 2018</strong>
-          &nbsp;|&nbsp; <a href="https://link.springer.com/article/10.1007/s13735-018-0154-2" target="_blank">PDF</a>
-        </li>
-      </ul>
-
-      <!-- 3) Book Chapters -->
-      <h4>Book Chapters</h4>
-      <ul>
-        <li>
-          <strong>Multimedia recommender systems: Algorithms and challenges</strong><br />
-          <em>Y. Deldjoo, M. Schedl, B. Hidasi, Y. Wei, X. He</em> – <strong>Recommender Systems Handbook (2023)</strong>
-          &nbsp;|&nbsp; <a href="https://link.springer.com/chapter/10.1007/978-1-0716-2197-4_25" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Adversarial recommender systems: Attack, defense, and advances</strong><br />
-          <em>V. W. Anelli, Y. Deldjoo, T. Di Noia, F. A. Merra</em> – <strong>Recommender Systems Handbook (2023)</strong>
-          &nbsp;|&nbsp; <a href="https://link.springer.com/chapter/10.1007/978-1-0716-2197-4_9" target="_blank">PDF</a>
-        </li>
-      </ul>
-
-      <!-- 4) Tutorials -->
-      <h4>Tutorials</h4>
-      <ul>
-        <li>
-          <strong>Understanding Language Modeling Paradigm Adaptations in Recommender Systems</strong> (Lessons &amp; Open Challenges)<br />
-          <em>L. Zhang, P. Liu, Y. Deldjoo et al.</em> – ECAI'24 
-          &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2404.03788" target="_blank">arXiv</a>
-        </li>
-        <li>
-          <strong>Pursuing Privacy in Recommender Systems</strong><br />
-          <em>V. W. Anelli, L. Belli, Y. Deldjoo et al.</em> – RecSys'21
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/abs/10.1145/3460231.3473326" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Adversarial Learning for Recommendation (AL4Rec Tutorial)</strong><br />
-          <em>V. W. Anelli, Y. Deldjoo, T. Di Noia, F. A. Merra</em> – ECIR'21 
-          &nbsp;|&nbsp; <a href="https://github.com/sisinflab/amlrecsys-tutorial/blob/master/Tutorial-AL4Rec%40ECIR2021.pdf" target="_blank">Slides</a>
-        </li>
-        <li>
-          <strong>Adversarial Learning for Recommendation: Concept to Code</strong><br />
-          <em>V. W. Anelli, Y. Deldjoo, T. Di Noia, F. A. Merra</em> – RecSys'20 
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/10.1145/3383313.3411447" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Adversarial Machine Learning in Recommender Systems (AML-RecSys)</strong><br />
-          <em>Y. Deldjoo, T. Di Noia, F. A. Merra</em> – WSDM'20 
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/10.1145/3336191.3371877" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Multi-media Recommender Systems</strong><br />
-          <em>Y. Deldjoo, M. Schedl, B. Hidasi, P. Knees</em> – RecSys'18 
-          &nbsp;|&nbsp; <a href="https://doi.org/10.1145/3240323.3241620" target="_blank">PDF</a>
-        </li>
-      </ul>
-
-      <!-- 5) Selected Technical Papers -->
-      <h4>Selected Technical Papers</h4>
-      <ul>
-        <li>
-          <strong>A Normative Framework for Benchmarking Consumer Fairness in LLM-based Recommender Systems</strong><br />
-          <em>Y. Deldjoo, F. Nazary</em> – ROEGEN@RecSys 2024 
-          &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2405.02219" target="_blank">arXiv</a>
-        </li>
-        <li>
-          <strong>CFaiRLLM: Consumer Fairness Evaluation in LLM-based Recommender Systems</strong><br />
-          <em>Y. Deldjoo, T. Di Noia</em> – Under Review, 2024 
-          &nbsp;|&nbsp; <a href="https://arxiv.org/pdf/2403.05668.pdf" target="_blank">arXiv</a>
-        </li>
-        <li>
-          <strong>Understanding Biases in ChatGPT-based Recommender Systems: Provider Fairness, Temporal Stability, and Recency</strong><br />
-          <em>Y. Deldjoo</em> – Under Review, 2024 
-          &nbsp;|&nbsp; <a href="https://arxiv.org/pdf/2401.10545.pdf" target="_blank">arXiv</a>
-        </li>
-        <li>
-          <strong>Music4All-Onion: A Large-Scale Multi-faceted Content-Centric Music Recommendation Dataset</strong><br />
-          <em>M. Moscati, E. Parada-Cabaleiro, Y. Deldjoo et al.</em> – CIKM'22 
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557656" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>IEEE13-AdvAttack: Benchmarking the Power of Adversarial Attacks against Fault Prediction Systems in Smart Electrical Grid</strong><br />
-          <em>C. Ardito, Y. Deldjoo, T. Di Noia et al.</em> – CIKM'22 
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557612" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation</strong><br />
-          <em>H. A. Rahmani, M. Naghiaei, A. Tourani, Y. Deldjoo</em> – RecSys'22 
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/abs/10.1145/3523227.3551481" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Leveraging Content-Style Item Representation for Visual Recommendation</strong><br />
-          <em>Y. Deldjoo, T. Di Noia, D. Malitesta, F. Merra, A. ...</em> – ECIR'22 
-          &nbsp;|&nbsp; <a href="https://link.springer.com/chapter/10.1007/978-3-030-99739-7_10" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Visual Inspection of Fault Type and Zone Prediction in Electrical Grids</strong><br />
-          <em>C. Ardito, Y. Deldjoo, T. Di Noia, F. Nazary, E. Di Sciascio</em> – ESWA, 2022 
-          &nbsp;|&nbsp; <a href="https://doi.org/10.1016/j.eswa.2022.118368" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>The Role of Context Fusion on Accuracy, Beyond-Accuracy, and Fairness of POI Recommendation</strong><br />
-          <em>H. A. Rahmani, Y. Deldjoo, T. Di Noia</em> – ESWA, 2022 
-          &nbsp;|&nbsp; <a href="https://doi.org/10.1016/j.eswa.2022.117700" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>User-controlled federated matrix factorization for recommender systems</strong><br />
-          <em>V. W. Anelli, Y. Deldjoo, T. Di Noia, A. Ferrara et al.</em> – JIIS, 2022 
-          &nbsp;|&nbsp; <a href="https://link.springer.com/article/10.1007/s10844-021-00688-z" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Explaining Recommender Systems Fairness and Accuracy through the lens of Data Characteristics</strong><br />
-          <em>Y. Deldjoo, A. Bellogín, T. Di Noia</em> – IP&M, 2021 
-          &nbsp;|&nbsp; <a href="https://www.sciencedirect.com/science/article/pii/S0306457321001503" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>A Flexible Framework for Evaluating User and Item Fairness in Recommender Systems</strong><br />
-          <em>Y. Deldjoo, V. W. Anelli, H. Zamani, A. Bellogin, T. Di Noia</em> – UMUAI, 2021 
-          &nbsp;|&nbsp; <a href="https://link.springer.com/article/10.1007/s11257-020-09285-1" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>A Study on the Relative importance of CNNs in Visually-aware Recommender Systems</strong><br />
-          <em>Y. Deldjoo, T. Di Noia, D. Malitesta, F. Merra...</em> – CVPR'21 
-        </li>
-        <li>
-          <strong>A Formal Analysis of Recommendation Quality of Adversarially-trained Recommenders</strong><br />
-          <em>V. W. Anelli, Y. Deldjoo, et al.</em> – CIKM'21 (Runner-Up Paper)
-        </li>
-        <li>
-          <strong>Machine-learned Adversarial Attacks against Fault Prediction Systems in Smart Electrical Grids</strong><br />
-          <em>C. Ardito, Y. Deldjoo, T. Di Noia...</em> – ADvML@KDD'22 
-        </li>
-        <li>
-          <strong>Movie genome: alleviating new item cold start in movie recommendation</strong><br />
-          <em>Y. Deldjoo, M. Ferrari Dacrema, M. G. Constantin, et al.</em> – UMUAI, 2019 
-          &nbsp;|&nbsp; <a href="https://link.springer.com/article/10.1007/s11257-019-09221-y" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Audio-visual encoding of multimedia content for enhancing movie recommendations</strong><br />
-          <em>Y. Deldjoo, M. G. Constantin, H. Eghbal-Zadeh, et al.</em> – RecSys'18 
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/abs/10.1145/3240323.3240407" target="_blank">PDF</a>
-        </li>
-        <li>
-          <strong>Exploring The Semantic Gap for Movie Recommendation</strong><br />
-          <em>M. Elahi, Y. Deldjoo, F. B. Moghaddam, et al.</em> – RecSys'17 
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/abs/10.1145/3109859.3109908" target="_blank">PDF</a>
+          <em>F. Nazary, Y. Deldjoo, T. Di Noia</em> – <strong>XI-ML@ECAI’23</strong>
         </li>
       </ul>
     </div>
@@ -382,7 +204,7 @@
     <div class="col-md-12">
       <h2 class="section-heading">Professional Activities</h2>
       <ul>
-        <li><strong>Aug 2022 – Present:</strong> Tenure-track Assistant Professor, Polytechnic University of Bari, Italy</li>
+        <li><strong>Aug 2022 – Present:</strong> Tenure-track Assistant Professor, Polytechnic University of Bari</li>
         <li><strong>Aug 2019 – Jul 2022:</strong> Assistant Professor (RtD-A), Polytechnic University of Bari</li>
         <li><strong>Apr 2019 – Jul 2019:</strong> Postdoctoral Researcher, Polytechnic University of Bari</li>
         <li><strong>Jan 2018 – Feb 2019:</strong> Research Assistant, University of Milano-Bicocca</li>
