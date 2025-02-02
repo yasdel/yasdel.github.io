@@ -14,7 +14,7 @@
       color: #333;
       font-family: Arial, sans-serif;
       line-height: 1.5;
-      font-size: 14px; /* Smaller font for a streamlined look */
+      font-size: 14px;
     }
     .container {
       max-width: 1100px;
@@ -32,7 +32,7 @@
     .section-heading {
       font-size: 1.15rem;
       font-weight: 600;
-      border-left: 4px solid #d9534f; /* Red accent */
+      border-left: 4px solid #d9534f;
       padding-left: 10px;
       margin-top: 2rem;
       margin-bottom: 1rem;
@@ -43,7 +43,7 @@
     }
     .profile-photo {
       width: 100%;
-      max-width: 350px;
+      max-width: 400px; /* slightly larger than before */
       border-radius: 5px;
       margin-top: 20px;
     }
@@ -53,7 +53,7 @@
       border-radius: 5px;
       padding: 15px;
       margin-bottom: 1rem;
-      min-height: 250px; /* helps keep columns aligned */
+      min-height: 250px;
     }
     .footer {
       margin-top: 3rem;
@@ -63,7 +63,6 @@
       text-align: center;
       color: #666;
     }
-    /* Red accent links */
     a.accent-link {
       color: #d9534f;
       text-decoration: none;
@@ -81,6 +80,7 @@
 <body>
 
 <div class="container">
+
   <!-- Top Row: Name/Bio on the left, Photo on the right -->
   <div class="row mt-3">
     <div class="col-md-8">
@@ -89,9 +89,17 @@
         Senior Researcher &amp; Assistant Professor, Polytechnic University of Bari
       </div>
       <p class="short-bio">
-        Dr. Yashar Deldjoo is a senior research scientist and a tenure-track Assistant Professor in Computer Science at the Polytechnic University of Bari, Italy, recognized among the top 2% of research scientists worldwide (Stanford’s Ioannidis database, 2023–2024). His work focuses on integrating elements of <strong>trustworthy and responsible AI</strong> (e.g., fairness, adversarial robustness, security) into recommender systems, with a special emphasis on <strong>generative models</strong>. 
-        Currently, his lab’s efforts revolve around <a href="#" class="accent-link">KDD'24 survey</a> findings and a forthcoming book <a href="#" class="accent-link">“Recommendation with Generative Models”</a>. He examines the potential and hazards of large language models (LLMs)—like hallucinations, randomness, and bias—in RecSys and downstream ML tasks, developing novel evaluation metrics to ensure robust, trustworthy AI. 
-        Dr. Deldjoo recently discussed next-generation RecSys on the <a href="https://recsperts.com/24" class="accent-link" target="_blank">Recsperts Podcast</a>. He is Associate Editor for IEEE TKDE and ACM CSUR, Distinguished Reviewer for ACM TORS, and Guest Editor for TORS special issues on Generative RecSys (2025) and Trustworthy RecSys (2024). He also serves as a Senior Program Committee (SPC) member for top-tier venues including SIGIR, CIKM, ECAI, TheWebConf, and ACM RecSys.
+        His work focuses on integrating elements of 
+        <span style="color:red">trustworthy and responsible AI</span> 
+        (e.g., fairness, adversarial robustness, security) into 
+        <span style="color:red">recommender systems</span>, 
+        with a special emphasis on 
+        <span style="color:red">generative models</span>. 
+        Currently, his lab’s efforts revolve around KDD'24 survey findings and a forthcoming book 
+        <span style="color:red">“Recommendation with Generative Models”</span>. 
+        He examines the potential and hazards of large language models (LLMs)—like hallucinations, randomness, and bias—in RecSys and downstream ML tasks, 
+        developing novel evaluation metrics to ensure robust, 
+        <span style="color:red">trustworthy AI</span>.
       </p>
     </div>
     <div class="col-md-4 text-md-end text-center">
@@ -109,16 +117,17 @@
       <h2 class="section-heading">Research</h2>
       <div class="info-box">
         <p>
-          I investigate <strong>reliable and trustworthy AI</strong> in Recommender Systems, emphasizing:
+          I investigate <span style="color:red">reliable</span> and 
+          <span style="color:red">trustworthy AI</span> in Recommender Systems, emphasizing:
         </p>
         <ul>
           <li>Adversarial robustness &amp; attack defense</li>
-          <li>Fairness &amp; equity in recommendations</li>
+          <li>Fairness &amp; bias mitigation</li>
           <li>Explainability &amp; interpretability</li>
           <li>Generative AI &amp; large language models</li>
         </ul>
         <p>
-          My aim is to link theoretical models and real-world deployment, ensuring AI is both innovative and socially responsible.
+          My aim is to bridge theoretical models and real-world deployment, ensuring AI is socially responsible.
         </p>
       </div>
     </div>
@@ -127,14 +136,14 @@
       <div class="info-box">
         <ul>
           <li>
-            <strong>New Book:</strong> “Recommendation with Generative Models” (FntIR 2024–2025)
+            <strong>Forthcoming Book:</strong> “Recommendation with Generative Models” (2025)
           </li>
           <li>
             <strong>Workshop:</strong> Co-organizing 
             <em>ROEGEN @ ACM RecSys 2024</em> (Risks &amp; Opportunities of Generative Models)
           </li>
           <li>
-            <strong>Podcast:</strong> Discussing Generative RecSys on 
+            <strong>Podcast:</strong> Generative RecSys on 
             <a href="https://recsperts.com/24" target="_blank" class="accent-link">Recsperts</a>
           </li>
           <li>
@@ -147,7 +156,7 @@
       <h2 class="section-heading">Note to Students</h2>
       <div class="info-box">
         <p>
-          I'm interested in hearing from dedicated students/post-docs who want to explore:
+          I'm interested in collaborating with students/post-docs in:
         </p>
         <ul>
           <li>Generative Recommender Systems</li>
@@ -155,7 +164,7 @@
           <li>Evaluation Metrics for Risk/Hazards</li>
         </ul>
         <p>
-          Reach out if you share a passion for bridging AI theory and practical innovation.
+          Feel free to reach out if you are passionate about pushing AI innovation responsibly.
         </p>
       </div>
     </div>
@@ -174,139 +183,183 @@
     </div>
   </div>
 
-  <!-- Publications section (comprehensive) -->
+  <!-- Publications section -->
   <div class="row mt-4">
     <div class="col-md-12">
       <h2 class="section-heading">Publications</h2>
       <p>
-        Below is a comprehensive selection of my work. For the full list, see my 
-        <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank">Google Scholar</a> or
+        A thematic selection of my most impactful works is below. For the complete list, 
+        see my 
+        <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank">Google Scholar</a> 
+        or 
         <a href="https://dblp.org/pid/167/2847.html" target="_blank">DBLP</a>.
       </p>
 
-      <!-- 1) Most Impactful Publications -->
-      <h4>Most Impactful Publications</h4>
+      <!-- Grouped by Topic -->
+      <h4>Most Impactful Publications (Grouped by Topic)</h4>
+
+      <!-- 1) Generative Models for RecSys -->
+      <p><strong>Generative Models for RecSys</strong></p>
+      <p>
+        This line of work is among the most comprehensive sources to date on how generative models 
+        (VAE, Diffusion Models, GANs, text-based LLMs, multimodal approaches) can be leveraged in recommendation. 
+        It covers evaluation, risks, and hazards with fresh, updated perspectives resulting from 
+        strong academic-industry collaborations (DeepMind, Amazon, USC, UT, Poliba). 
+        These efforts significantly extend prior literature with systematically structured approaches 
+        and in-depth coverage of emerging challenges.
+      </p>
       <ul>
         <li>
-          <strong>Content-based Video Recommendation System Based on Personality Traits</strong><br />
-          <em>Y. Deldjoo, et al.</em> – <strong>UMUAI, 2017</strong><br />
-          Among the earliest works linking user personality traits to video content-based recommendation, widely cited and foundational in bridging psychology with RecSys.
+          <em><strong>Recommendation with Generative Models</strong> (2025)</em>  
+          <br />Forthcoming book offering end-to-end coverage of Gen-RecSys theory and practice.
         </li>
         <li>
-          <strong>A Survey on Adversarial Recommender Systems</strong><br />
-          <em>Y. Deldjoo, T. Di Noia, F. A. Merra</em> – <strong>ACM CSUR, 2022</strong><br />
-          A pioneering survey capturing adversarial attacks and defense methods in recommendation, highly referenced for its comprehensive coverage.
-        </li>
-        <li>
-          <strong>Fairness in Recommender Systems: Research Landscape and Future Directions</strong><br />
-          <em>Y. Deldjoo et al.</em> – <strong>UMUAI, 2023</strong><br />
-          Explores multi-faceted fairness dimensions in RecSys, offering theoretical frameworks and practical guidelines.
-        </li>
-        <li>
-          <strong>A Personalized Framework for Consumer and Producer Group Fairness Optimization</strong><br />
-          <em>H. A. Rahmani, M. Naghiaei, Y. Deldjoo</em> – <strong>ACM TORS, 2024</strong><br />
-          Proposes a robust approach to balancing fairness among diverse user/item groups, reflecting new frontiers in RecSys fairness.
-        </li>
-        <li>
-          <strong>A Review of Modern Fashion Recommender Systems</strong><br />
-          <em>Y. Deldjoo et al.</em> – <strong>ACM CSUR, 2023</strong><br />
-          Detailed taxonomy of fashion-focused approaches, bridging computer vision, personalization, and user modeling.
+          <strong>A Review of Modern Recommender Systems using Generative Models (Gen-RecSys)</strong>
+          <br />Surveys state-of-the-art generative paradigms in RecSys, from interaction-driven to multimodal systems.
         </li>
       </ul>
 
-      <!-- 2) Surveys -->
+      <!-- 2) Trustworthy Gen-RecSys (Biases, Security) -->
+      <p><strong>Trustworthy Gen-RecSys (or downstream ML)</strong></p>
+
+      <!-- (a) Biases of Gen-RecSys -->
+      <ul>
+        <li>
+          <strong>Understanding Biases in ChatGPT-based Recommender Systems: Provider Fairness, Temporal Stability, and Recency</strong>
+          <br />Offers early insights into bias assessment and temporal factors in LLM-driven recommendations.
+        </li>
+        <li>
+          <strong>CFaiRLLM: Consumer Fairness Evaluation in Large-Language Model Recommender Systems</strong>
+          <br />Proposes an evaluation framework for consumer fairness when using LLMs in recommendation.
+        </li>
+      </ul>
+
+      <!-- (b) Security of Gen-RecSys -->
+      <ul>
+        <li>
+          <strong>Poison-RAG: Adversarial Data Poisoning Attacks on Retrieval-Augmented Generation in Recommender Systems</strong>
+          <br />Demonstrates how retrieval-augmented generative pipelines can be subverted by malicious data injections.
+        </li>
+      </ul>
+
+      <!-- 3) Trustworthy in Classical RecSys -->
+      <p><strong>Trustworthy in Classical RecSys</strong></p>
+      <ul>
+        <li>
+          <strong>Cpfair: Personalized Consumer and Producer Fairness Re-ranking for Recommender Systems</strong>
+          <br />A re-ranking solution balancing user/item-side fairness without sacrificing accuracy.
+        </li>
+        <li>
+          <strong>Fairness in Recommender Systems: Research Landscape and Future Directions</strong>
+          <br />A high-level overview of fairness definitions, metrics, and open challenges in classical RecSys.
+        </li>
+      </ul>
+
+      <!-- 4) Security & Adversarial Robustness -->
+      <p><strong>Security &amp; Adversarial Robustness</strong></p>
+      <ul>
+        <li>
+          <strong>A Survey on Adversarial Recommender Systems</strong>
+          <br />Comprehensive review of attack/defense strategies, including generative adversarial networks in RecSys.
+        </li>
+      </ul>
+
+      <!-- 5) Data & Dataset Characteristics -->
+      <p><strong>Data &amp; Dataset Characteristics</strong></p>
+      <ul>
+        <li>
+          <strong>How Dataset Characteristics Affect the Robustness of Collaborative Recommendation Models</strong>
+          <br />Analyzes how varied data properties influence model vulnerability and stability.
+        </li>
+        <li>
+          <strong>Explaining Recommender Systems Fairness and Accuracy through the Lens of Data Characteristics</strong>
+          <br />Examines how data distribution and sparsity relate to fairness/accuracy trade-offs.
+        </li>
+      </ul>
+
+      <!-- 6) Evaluation Frameworks -->
+      <p><strong>Evaluation Frameworks (Fairness, Gen-RecSys)</strong></p>
+      <ul>
+        <li>
+          <strong>A Flexible Framework for Evaluating User and Item Fairness in Recommender Systems</strong>
+          <br />Provides modular tools for fairness analysis across different datasets and algorithms.
+        </li>
+        <li>
+          <strong>A Unifying and General Account of Fairness Measurement in Recommender Systems</strong>
+          <br />Presents a comprehensive taxonomy and measurement protocols for fairness objectives.
+        </li>
+      </ul>
+
+      <!-- 7) Application of LLM in Downstream RecSys/ML Task -->
+      <p><strong>Application of LLM in Downstream RecSys/ML Tasks</strong></p>
+      <ul>
+        <li>
+          <strong>ChatGPT-HealthPrompt: Harnessing the Power of XAI in Prompt-Based Healthcare Decision Support using ChatGPT</strong>
+          <br />Pioneers the use of LLMs to provide interpretable, AI-assisted suggestions for clinical contexts.
+        </li>
+      </ul>
+
+      <!-- 8) Multimodal RecSys, Fashion AI -->
+      <p><strong>Multimodal RecSys, Fashion AI</strong></p>
+      <ul>
+        <li>
+          <strong>Towards Multi-Modal Conversational Information Seeking</strong>
+          <br />Explores dialogues that integrate visual and textual signals to enhance user interaction.
+        </li>
+        <li>
+          <strong>A Review of Modern Fashion Recommender Systems</strong>
+          <br />Extensive survey bridging computer vision, personalization, and user modeling in fashion domains.
+        </li>
+      </ul>
+
+      <!-- Additional Sections: Surveys, Tutorials, Book Chapters, etc. -->
       <h4>Surveys</h4>
       <ul>
         <li>
-          <strong>A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)</strong><br />
-          <em>Y. Deldjoo et al.</em> – Under Review 
-          &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2404.00579" target="_blank" class="accent-link">arXiv</a>
+          <strong>A Review of Modern Recommender Systems using Generative Models (Gen-RecSys)</strong> (Pre-print)
         </li>
         <li>
-          <strong>Interactive Question Answering Systems: Literature Review</strong><br />
-          <em>G. M. Biancofiore, Y. Deldjoo, et al.</em> – <strong>ACM CSUR, 2024</strong> 
-          &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2209.01621" target="_blank" class="accent-link">PDF</a>
+          <strong>Fairness in Recommender Systems: Research Landscape and Future Directions</strong> (UMUAI, 2023)
         </li>
         <li>
-          <strong>Content-driven Music Recommendation: Evolution, State of the Art, and Challenges</strong><br />
-          <em>Y. Deldjoo, M. Schedl, P. Knees</em> – <strong>Computer Science Review (2024)</strong> 
-          &nbsp;|&nbsp; <a href="https://doi.org/10.1016/j.cosrev.2024.100618" target="_blank" class="accent-link">PDF</a>
+          <strong>A Survey on Adversarial Recommender Systems</strong> (ACM CSUR, 2022)
         </li>
+        <!-- Add others as needed -->
       </ul>
 
-      <!-- 3) Book Chapters -->
-      <h4>Book Chapters</h4>
-      <ul>
-        <li>
-          <strong>Multimedia Recommender Systems: Algorithms and Challenges</strong><br />
-          <em>Y. Deldjoo et al.</em> – <strong>Recommender Systems Handbook (2023)</strong> 
-          &nbsp;|&nbsp; <a href="https://link.springer.com/chapter/10.1007/978-1-0716-2197-4_25" target="_blank" class="accent-link">PDF</a>
-        </li>
-        <li>
-          <strong>Adversarial Recommender Systems: Attack, Defense, and Advances</strong><br />
-          <em>V. W. Anelli, Y. Deldjoo, et al.</em> – <strong>Recommender Systems Handbook (2023)</strong> 
-          &nbsp;|&nbsp; <a href="https://link.springer.com/chapter/10.1007/978-1-0716-2197-4_9" target="_blank" class="accent-link">PDF</a>
-        </li>
-      </ul>
-
-      <!-- 4) Tutorials -->
       <h4>Tutorials</h4>
       <ul>
         <li>
-          <strong>Understanding Language Modeling Paradigm Adaptations in Recommender Systems</strong><br />
-          <em>L. Zhang, P. Liu, Y. Deldjoo, et al.</em> – ECAI'24 
-          &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2404.03788" target="_blank" class="accent-link">arXiv</a>
+          <strong>Understanding Language Modeling Paradigm Adaptations in Recommender Systems</strong> (ECAI'24)
         </li>
         <li>
-          <strong>Pursuing Privacy in Recommender Systems</strong><br />
-          <em>V. W. Anelli, L. Belli, Y. Deldjoo, et al.</em> – RecSys'21
-          &nbsp;|&nbsp; <a href="https://dl.acm.org/doi/abs/10.1145/3460231.3473326" target="_blank" class="accent-link">PDF</a>
+          <strong>Pursuing Privacy in Recommender Systems</strong> (RecSys'21)
+        </li>
+        <!-- Add others as needed -->
+      </ul>
+
+      <h4>Book and Book Chapters</h4>
+      <ul>
+        <li>
+          <strong>Recommendation with Generative Models</strong> (Forthcoming 2025)
         </li>
         <li>
-          <strong>Adversarial Learning for Recommendation (AL4Rec Tutorial)</strong><br />
-          <em>V. W. Anelli, Y. Deldjoo, T. Di Noia, F. A. Merra</em> – ECIR'21 
+          <strong>Multimedia Recommender Systems: Algorithms and Challenges</strong> (Recommender Systems Handbook, 2023)
         </li>
         <li>
-          <strong>Adversarial Learning for Recommendation: Concept to Code</strong><br />
-          <em>V. W. Anelli, Y. Deldjoo, T. Di Noia, F. A. Merra</em> – RecSys'20 
+          <strong>Adversarial Recommender Systems: Attack, Defense, and Advances</strong> (Recommender Systems Handbook, 2023)
         </li>
       </ul>
 
-      <!-- 5) Selected Technical Papers -->
-      <h4>Selected Technical Papers</h4>
+      <h4>Other Technical Papers</h4>
       <ul>
         <li>
-          <strong>ChatGPT-HealthPrompt: XAI-driven Healthcare Decision Support</strong><br />
-          <em>F. Nazary, Y. Deldjoo, T. Di Noia</em> – <strong>XI-ML@ECAI’23</strong><br />
-          Leverages LLMs for clinical recommendations with interpretability and safety considerations.
+          <strong>Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation</strong> (RecSys'22)
         </li>
         <li>
-          <strong>A Normative Framework for Benchmarking Consumer Fairness in LLM-based Recommender Systems</strong><br />
-          <em>Y. Deldjoo, F. Nazary</em> – ROEGEN@RecSys 2024
+          <strong>Audio-Visual Encoding of User Facial Expressions for Emotion-Aware Recommendations</strong> (RecSys'18)
         </li>
-        <li>
-          <strong>CFaiRLLM: Consumer Fairness Evaluation in LLM-based Recommender Systems</strong><br />
-          <em>Y. Deldjoo, T. Di Noia</em> – Under Review, 2024
-        </li>
-        <li>
-          <strong>Understanding Biases in ChatGPT-based Recommender Systems</strong><br />
-          <em>Y. Deldjoo</em> – Under Review, 2024
-        </li>
-        <li>
-          <strong>Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation</strong><br />
-          <em>H. A. Rahmani, M. Naghiaei, A. Tourani, Y. Deldjoo</em> – RecSys'22
-        </li>
-      </ul>
-
-      <!-- 6) Additional Earlier Publications -->
-      <h4>Additional Earlier Publications</h4>
-      <ul>
-        <li>
-          <strong>Audio-Visual Encoding of User Facial Expressions for Emotion-Aware Recommendations</strong><br />
-          <em>Y. Deldjoo, et al.</em> – RecSys'18<br />
-          Showcases how incorporating user’s emotional cues from video data can enhance personalization efficacy.
-        </li>
-        <!-- Add more older or notable works as needed -->
+        <!-- More if necessary -->
       </ul>
 
     </div>
