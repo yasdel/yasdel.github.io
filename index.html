@@ -41,6 +41,12 @@
       text-align: justify;
       margin-top: 0.5rem;
     }
+    .short-bio .short-version {
+      color: #d9534f; /* slightly accent the shorter statement */
+      font-style: italic;
+      display: block;
+      margin-top: 0.5rem;
+    }
     .profile-photo {
       width: 100%;
       max-width: 400px; /* slightly larger than before */
@@ -70,6 +76,22 @@
     a.accent-link:hover {
       text-decoration: underline;
     }
+    /* Macro-level topic styling */
+    .macro-topic {
+      color: #d9534f;
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-top: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+    .macro-topic::before {
+      content: "\1F4D6 "; /* small book icon as an example; can change if desired */
+      font-size: 1.2rem;
+    }
+    .macro-description {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
     @media(max-width: 767px){
       .profile-photo {
         margin-bottom: 20px;
@@ -88,18 +110,31 @@
       <div class="header-title">
         Senior Researcher &amp; Assistant Professor, Polytechnic University of Bari
       </div>
+      <!-- Bio with both original and shortened text -->
       <p class="short-bio">
-        His work focuses on integrating elements of 
-        <span style="color:red">trustworthy and responsible AI</span> 
-        (e.g., fairness, adversarial robustness, security) into 
-        <span style="color:red">recommender systems</span>, 
-        with a special emphasis on 
-        <span style="color:red">generative models</span>. 
-        Currently, his lab’s efforts revolve around KDD'24 survey findings and a forthcoming book 
-        <span style="color:red">“Recommendation with Generative Models”</span>. 
-        He examines the potential and hazards of large language models (LLMs)—like hallucinations, randomness, and bias—in RecSys and downstream ML tasks, 
-        developing novel evaluation metrics to ensure robust, 
-        <span style="color:red">trustworthy AI</span>.
+        Dr. Yashar Deldjoo is a senior research scientist and a tenure-track Assistant Professor in Computer Science 
+        at the Polytechnic University of Bari, Italy, recognized among the top 2% of research scientists worldwide 
+        (Stanford’s Ioannidis database, 2023–2024). His work focuses on integrating elements of 
+        <strong>trustworthy and responsible AI</strong> (e.g., fairness, adversarial robustness, security) 
+        into recommender systems, with a special emphasis on <strong>generative models</strong>.
+        Currently, his lab’s efforts revolve around 
+        <a href="#" class="accent-link">KDD'24 survey</a> findings 
+        and a forthcoming book 
+        <a href="#" class="accent-link">“Recommendation with Generative Models”</a>. 
+        He examines the potential and hazards of large language models (LLMs)—like hallucinations, randomness, 
+        and bias—in RecSys and downstream ML tasks, developing novel evaluation metrics to ensure robust, trustworthy AI. 
+        Dr. Deldjoo recently discussed next-generation RecSys on the 
+        <a href="https://recsperts.com/24" class="accent-link" target="_blank">Recsperts Podcast</a>. 
+        He is Associate Editor for IEEE TKDE and ACM CSUR, Distinguished Reviewer for ACM TORS, 
+        and Guest Editor for TORS special issues on Generative RecSys (2025) and Trustworthy RecSys (2024). 
+        He also serves as a Senior Program Committee (SPC) member for top-tier venues including SIGIR, CIKM, ECAI, 
+        TheWebConf, and ACM RecSys.
+        <span class="short-version">
+          Short version: Recognized among top 2% of scientists, Dr. Deldjoo bridges fairness, robustness, and security with 
+          <strong>generative</strong> approaches in Recommender Systems. 
+          He focuses on LLM hazards (e.g., hallucinations), ethical metrics, and real-world impacts through 
+          academic-industry collaborations.
+        </span>
       </p>
     </div>
     <div class="col-md-4 text-md-end text-center">
@@ -188,146 +223,150 @@
     <div class="col-md-12">
       <h2 class="section-heading">Publications</h2>
       <p>
-        A thematic selection of my most impactful works is below. For the complete list, 
-        see my 
-        <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank">Google Scholar</a> 
-        or 
-        <a href="https://dblp.org/pid/167/2847.html" target="_blank">DBLP</a>.
+        A thematic selection of my most impactful works is below. For the complete list, see 
+        <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank" class="accent-link">
+          <strong>Google Scholar</strong>
+        </a> or 
+        <a href="https://dblp.org/pid/167/2847.html" target="_blank" class="accent-link">
+          <strong>DBLP</strong>
+        </a>.
+        &nbsp;[ 
+        <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" 
+           class="accent-link" 
+           style="font-weight:bold"
+           target="_blank">
+           Link
+        </a>
+        ]
       </p>
 
-      <!-- Grouped by Topic -->
-      <h4>Most Impactful Publications (Grouped by Topic)</h4>
+      <!-- Grouped by Topic, with colored headings and short descriptions -->
 
       <!-- 1) Generative Models for RecSys -->
-      <p><strong>Generative Models for RecSys</strong></p>
-      <p>
-        This line of work is among the most comprehensive sources to date on how generative models 
-        (VAE, Diffusion Models, GANs, text-based LLMs, multimodal approaches) can be leveraged in recommendation. 
-        It covers evaluation, risks, and hazards with fresh, updated perspectives resulting from 
-        strong academic-industry collaborations (DeepMind, Amazon, USC, UT, Poliba). 
-        These efforts significantly extend prior literature with systematically structured approaches 
-        and in-depth coverage of emerging challenges.
-      </p>
+      <div class="macro-topic">Generative Models for RecSys</div>
+      <div class="macro-description">
+        Comprehensive sources on how VAE, Diffusion Models, GANs, LLMs, and multimodal approaches 
+        drive next-gen recommendations, with a focus on evaluation and real-world hazards.
+      </div>
       <ul>
         <li>
-          <em><strong>Recommendation with Generative Models</strong> (2025)</em>  
-          <br />Forthcoming book offering end-to-end coverage of Gen-RecSys theory and practice.
+          <em><strong>Recommendation with Generative Models</strong></em> (2025)  
+          <br />Forthcoming book: an end-to-end coverage of Gen-RecSys theory and practice.
         </li>
         <li>
           <strong>A Review of Modern Recommender Systems using Generative Models (Gen-RecSys)</strong>
-          <br />Surveys state-of-the-art generative paradigms in RecSys, from interaction-driven to multimodal systems.
+          <br />Addresses the state-of-the-art generative paradigms in RecSys, from interaction-driven to multimodal.
         </li>
       </ul>
 
       <!-- 2) Trustworthy Gen-RecSys (Biases, Security) -->
-      <p><strong>Trustworthy Gen-RecSys (or downstream ML)</strong></p>
-
-      <!-- (a) Biases of Gen-RecSys -->
+      <div class="macro-topic">Trustworthy Gen-RecSys (Biases &amp; Security)</div>
+      <div class="macro-description">
+        Explores fairness, bias analysis, and adversarial tactics in large language model-driven recommenders.
+      </div>
       <ul>
         <li>
-          <strong>Understanding Biases in ChatGPT-based Recommender Systems: Provider Fairness, Temporal Stability, and Recency</strong>
-          <br />Offers early insights into bias assessment and temporal factors in LLM-driven recommendations.
+          <strong>Understanding Biases in ChatGPT-based Recommender Systems</strong>
+          <br />Investigates provider fairness, temporal stability, and recency in LLM-based recommendations.
         </li>
         <li>
-          <strong>CFaiRLLM: Consumer Fairness Evaluation in Large-Language Model Recommender Systems</strong>
-          <br />Proposes an evaluation framework for consumer fairness when using LLMs in recommendation.
+          <strong>CFaiRLLM: Consumer Fairness Evaluation in LLM-based Recommender Systems</strong>
+          <br />Proposes an evaluation framework for consumer-side fairness under large language models.
         </li>
-      </ul>
-
-      <!-- (b) Security of Gen-RecSys -->
-      <ul>
         <li>
-          <strong>Poison-RAG: Adversarial Data Poisoning Attacks on Retrieval-Augmented Generation in Recommender Systems</strong>
-          <br />Demonstrates how retrieval-augmented generative pipelines can be subverted by malicious data injections.
+          <strong>Poison-RAG: Adversarial Data Poisoning Attacks on Retrieval-Augmented Generation</strong>
+          <br />Shows how retrieval-augmented pipelines can be subverted by malicious data injections.
         </li>
       </ul>
 
       <!-- 3) Trustworthy in Classical RecSys -->
-      <p><strong>Trustworthy in Classical RecSys</strong></p>
+      <div class="macro-topic">Trustworthy in Classical RecSys</div>
+      <div class="macro-description">
+        Investigations in fairness, bias mitigation, and adversarial defenses for conventional recommendation algorithms.
+      </div>
       <ul>
         <li>
-          <strong>Cpfair: Personalized Consumer and Producer Fairness Re-ranking for Recommender Systems</strong>
-          <br />A re-ranking solution balancing user/item-side fairness without sacrificing accuracy.
+          <strong>Cpfair: Personalized Consumer and Producer Fairness Re-ranking</strong>
+          <br />Balances user/item fairness without sacrificing accuracy.
         </li>
         <li>
           <strong>Fairness in Recommender Systems: Research Landscape and Future Directions</strong>
-          <br />A high-level overview of fairness definitions, metrics, and open challenges in classical RecSys.
+          <br />Broad overview of fairness definitions, metrics, and open challenges in classical RecSys.
         </li>
-      </ul>
-
-      <!-- 4) Security & Adversarial Robustness -->
-      <p><strong>Security &amp; Adversarial Robustness</strong></p>
-      <ul>
         <li>
           <strong>A Survey on Adversarial Recommender Systems</strong>
-          <br />Comprehensive review of attack/defense strategies, including generative adversarial networks in RecSys.
+          <br />Comprehensive review of attack/defense strategies, including generative adversarial networks.
         </li>
       </ul>
 
-      <!-- 5) Data & Dataset Characteristics -->
-      <p><strong>Data &amp; Dataset Characteristics</strong></p>
+      <!-- 4) Data & Dataset Characteristics -->
+      <div class="macro-topic">Data &amp; Dataset Characteristics</div>
+      <div class="macro-description">
+        Analyzes how varied data properties influence model vulnerability, fairness, and performance in RecSys.
+      </div>
       <ul>
         <li>
           <strong>How Dataset Characteristics Affect the Robustness of Collaborative Recommendation Models</strong>
-          <br />Analyzes how varied data properties influence model vulnerability and stability.
         </li>
         <li>
-          <strong>Explaining Recommender Systems Fairness and Accuracy through the Lens of Data Characteristics</strong>
-          <br />Examines how data distribution and sparsity relate to fairness/accuracy trade-offs.
+          <strong>Explaining Recommender Systems Fairness and Accuracy through Data Characteristics</strong>
         </li>
       </ul>
 
-      <!-- 6) Evaluation Frameworks -->
-      <p><strong>Evaluation Frameworks (Fairness, Gen-RecSys)</strong></p>
+      <!-- 5) Evaluation Frameworks -->
+      <div class="macro-topic">Evaluation Frameworks (Fairness, Gen-RecSys)</div>
+      <div class="macro-description">
+        Proposes unified frameworks and metrics to systematically measure fairness and generative model performance.
+      </div>
       <ul>
         <li>
           <strong>A Flexible Framework for Evaluating User and Item Fairness in Recommender Systems</strong>
-          <br />Provides modular tools for fairness analysis across different datasets and algorithms.
         </li>
         <li>
           <strong>A Unifying and General Account of Fairness Measurement in Recommender Systems</strong>
-          <br />Presents a comprehensive taxonomy and measurement protocols for fairness objectives.
         </li>
       </ul>
 
-      <!-- 7) Application of LLM in Downstream RecSys/ML Task -->
-      <p><strong>Application of LLM in Downstream RecSys/ML Tasks</strong></p>
+      <!-- 6) Application of LLM in Downstream RecSys/ML Task -->
+      <div class="macro-topic">Application of LLM in Downstream RecSys/ML Tasks</div>
+      <div class="macro-description">
+        Showcases how large language models can be leveraged for specialized domains like healthcare.
+      </div>
       <ul>
         <li>
-          <strong>ChatGPT-HealthPrompt: Harnessing the Power of XAI in Prompt-Based Healthcare Decision Support using ChatGPT</strong>
-          <br />Pioneers the use of LLMs to provide interpretable, AI-assisted suggestions for clinical contexts.
+          <strong>ChatGPT-HealthPrompt</strong>: Harnessing the Power of XAI in Prompt-Based Healthcare Decision Support
         </li>
       </ul>
 
-      <!-- 8) Multimodal RecSys, Fashion AI -->
-      <p><strong>Multimodal RecSys, Fashion AI</strong></p>
+      <!-- 7) Multimodal RecSys, Fashion AI -->
+      <div class="macro-topic">Multimodal RecSys &amp; Fashion AI</div>
+      <div class="macro-description">
+        Integration of visual, textual, and conversational signals in domains like fashion and beyond.
+      </div>
       <ul>
         <li>
           <strong>Towards Multi-Modal Conversational Information Seeking</strong>
-          <br />Explores dialogues that integrate visual and textual signals to enhance user interaction.
         </li>
         <li>
           <strong>A Review of Modern Fashion Recommender Systems</strong>
-          <br />Extensive survey bridging computer vision, personalization, and user modeling in fashion domains.
         </li>
       </ul>
 
-      <!-- Additional Sections: Surveys, Tutorials, Book Chapters, etc. -->
-      <h4>Surveys</h4>
+      <!-- Additional sections: Surveys, Tutorials, Books -->
+      <h4 class="section-heading">Surveys</h4>
       <ul>
         <li>
-          <strong>A Review of Modern Recommender Systems using Generative Models (Gen-RecSys)</strong> (Pre-print)
+          <strong><a href="https://doi.org/10.1007/s11257-023-09364-z" class="accent-link" target="_blank">
+            Fairness in Recommender Systems</a></strong> (UMUAI, 2023)
         </li>
         <li>
-          <strong>Fairness in Recommender Systems: Research Landscape and Future Directions</strong> (UMUAI, 2023)
+          <strong><a href="https://dl.acm.org/doi/abs/10.1145/3439729" class="accent-link" target="_blank">
+            A Survey on Adversarial Recommender Systems</a></strong> (ACM CSUR, 2022)
         </li>
-        <li>
-          <strong>A Survey on Adversarial Recommender Systems</strong> (ACM CSUR, 2022)
-        </li>
-        <!-- Add others as needed -->
+        <!-- Add more surveys with links as needed -->
       </ul>
 
-      <h4>Tutorials</h4>
+      <h4 class="section-heading">Tutorials</h4>
       <ul>
         <li>
           <strong>Understanding Language Modeling Paradigm Adaptations in Recommender Systems</strong> (ECAI'24)
@@ -338,7 +377,7 @@
         <!-- Add others as needed -->
       </ul>
 
-      <h4>Book and Book Chapters</h4>
+      <h4 class="section-heading">Book &amp; Book Chapters</h4>
       <ul>
         <li>
           <strong>Recommendation with Generative Models</strong> (Forthcoming 2025)
@@ -351,7 +390,7 @@
         </li>
       </ul>
 
-      <h4>Other Technical Papers</h4>
+      <h4 class="section-heading">Other Technical Papers</h4>
       <ul>
         <li>
           <strong>Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation</strong> (RecSys'22)
