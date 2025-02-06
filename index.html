@@ -37,20 +37,23 @@
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
+    /* Ensure the bio text remains black */
     .short-bio {
       text-align: justify;
       margin-top: 0.5rem;
+      color: #333;
     }
-    .short-bio .short-version {
+    /* Apply red styling to the Highlights block regardless of its location */
+    .short-version {
       color: #d9534f; /* accent color (red) */
       font-style: italic;
       display: block;
       margin-top: 0.75rem;
     }
+    /* Also force bullet items to be red */
     .short-version ul li {
-  color: #d9534f;
-}
-
+      color: #d9534f;
+    }
     .profile-photo {
       width: 100%;
       max-width: 400px;
@@ -115,7 +118,7 @@
         Senior Researcher &amp; Assistant Professor, Polytechnic University of Bari
       </div>
       
-      <!-- Streamlined original bio -->
+      <!-- Bio remains in normal black -->
       <p class="short-bio">
         Dr. Yashar Deldjoo is a senior research scientist and a tenure-track Assistant Professor 
         in Computer Science at the Polytechnic University of Bari, Italy, recognized among the 
@@ -141,18 +144,18 @@
         He is a Senior Program Committee (SPC) member at SIGIR, CIKM, ECAI, TheWebConf, and ACM RecSys.
       </p>
 
+      <!-- Highlights block in red -->
       <span class="short-version">
-  <strong>Highlights</strong>
-  <ul>
-    <li><strong>Forthcoming Book:</strong> “Recommendation with Generative Models” (2025)</li>
-    <li><strong>Workshop:</strong> Co-organizing <em>ROEGEN @ ACM RecSys 2024</em> (Risks &amp; Opportunities of Generative Models)</li>
-    <li>
-      <strong>Podcast:</strong> Generative RecSys on 
-      <a href="https://recsperts.com/24" target="_blank" class="accent-link">Recsperts</a>
-    </li>
-  </ul>
-</span>
-
+        <strong>Highlights</strong>
+        <ul>
+          <li><strong>Forthcoming Book:</strong> “Recommendation with Generative Models” (2025)</li>
+          <li><strong>Workshop:</strong> Co-organizing <em>ROEGEN @ ACM RecSys 2024</em> (Risks &amp; Opportunities of Generative Models)</li>
+          <li>
+            <strong>Podcast:</strong> Generative RecSys on 
+            <a href="https://recsperts.com/24" target="_blank" class="accent-link">Recsperts</a>
+          </li>
+        </ul>
+      </span>
 
     </div>
     <div class="col-md-4 text-md-end text-center">
