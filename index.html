@@ -83,22 +83,6 @@
     a.accent-link:hover {
       text-decoration: underline;
     }
-    /* Macro-level topic styling */
-    .macro-topic {
-      color: #d9534f;
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin-top: 1.25rem;
-      margin-bottom: 0.25rem;
-    }
-    .macro-topic::before {
-      content: "\1F4D6 "; /* small book icon */
-      font-size: 1.2rem;
-    }
-    .macro-description {
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
-    }
     @media(max-width: 767px){
       .profile-photo {
         margin-bottom: 20px;
@@ -227,6 +211,25 @@
     </div>
   </div>
 
+  <!-- ========== NEW SECTION: KEYNOTES & INVITED TALKS ========== -->
+  <div class="row mt-4">
+    <div class="col-md-12">
+      <h2 class="section-heading">Keynotes &amp; Invited Talks</h2>
+      <ul>
+        <li><strong>2025 – WSDM’25 (China):</strong> “Recommendation with Generative Models” (Tutorial)</li>
+        <li><strong>August 2024 – KDD’24 Workshop (Barcelona):</strong> “Generative AI for RecSys” (Panelist) </li>
+        <li><strong>2024 – ECAI’24 (Poland):</strong> “Understanding Language Modeling Paradigm Adaptations in Recommender Systems” (Tutorial)</li>
+        <li><strong>November 2021 – Vector Institute for AI (Toronto, Canada):</strong> “Fairness and Biases of ML in RecSys” (Invited Talk)</li>
+        <li><strong>October 2021 – BMW Artificial Intelligence (Munich, Germany):</strong> “Fairness &amp; Bias in ML-based Systems” (Invited Talk)</li>
+        <li><strong>2021 – RecSys’21 (Amsterdam):</strong> “Pursuing Privacy in Recommender Systems” (Tutorial)</li>
+        <li><strong>2021 – ECIR’21 (Virtual):</strong> “Adversarial Learning for Recommendation” (Tutorial)</li>
+        <li><strong>2020 – RecSys’20 (Brazil):</strong> “Adversarial Learning for Recommendation: From Concept to Code” (Tutorial)</li>
+        <li><strong>2018 – RecSys’18 (Vancouver):</strong> “Multimedia Recommender Systems” (Tutorial)</li>
+      </ul>
+    </div>
+  </div>
+  <!-- ========== END NEW SECTION ========== -->
+
   <!-- Editorial & Service Roles -->
   <div class="row mt-4">
     <div class="col-md-12">
@@ -240,12 +243,13 @@
     </div>
   </div>
 
-  <!-- Publications section -->
+  <!-- Publications section (Simplified/Selected) -->
   <div class="row mt-4">
     <div class="col-md-12">
       <h2 class="section-heading">Publications</h2>
       <p>
-        A thematic selection of my most impactful works is below. For the complete list, see 
+        Below is a curated sample of influential papers (e.g., journals, SIGIR, RecSys). 
+        For a comprehensive list, please see 
         <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank" class="accent-link">
           <strong>Google Scholar</strong>
         </a> or 
@@ -253,197 +257,40 @@
           <strong>DBLP</strong>
         </a>.
       </p>
-
-      <!-- 1) Generative Models for RecSys -->
-      <div class="macro-topic">Generative Models for RecSys</div>
-      <div class="macro-description">
-        Works on VAE, Diffusion Models, GANs, LLMs, and multimodal approaches for next-generation recommendations.
-      </div>
+      
       <ul>
-        <li>
-          <strong>Recommendation with Generative Models</strong> (Book, 2025)<br />
-          <em>Y. Deldjoo, M. S. Mansour, M. Larson, G. Faggioli</em><br />
-          Venue: Publisher TBA
-        </li>
-        <li>
-          <strong>A Review of Modern Recommender Systems using Generative Models (Gen-RecSys)</strong> 
-          (Under Review, 2024)<br />
-          <em>Y. Deldjoo, L. Belli, P. Cremonesi, T. Di Noia</em><br />
-          Venue: Under Review
-        </li>
-      </ul>
+        <li><strong>“Recommendation with Generative Models”</strong> (Book, 2025). 
+          <em>Y. Deldjoo, Z. He, J. McAuley, et al.</em></li>
 
-      <!-- 2) Trustworthy Gen-RecSys (Biases, Security) -->
-      <div class="macro-topic">Trustworthy Gen-RecSys (Biases &amp; Security)</div>
-      <div class="macro-description">
-        Fairness, bias mitigation, and adversarial tactics in LLM-driven recommenders.
-      </div>
-      <ul>
-        <li>
-          <strong>Understanding Biases in ChatGPT-based Recommender Systems</strong> (2024)<br />
-          <em>Y. Deldjoo, V. W. Anelli, T. Di Noia</em><br />
-          Venue: Under Review
-        </li>
-        <li>
-          <strong>CFaiRLLM: Consumer Fairness Evaluation in LLM-based Recommender Systems</strong> (2024)<br />
-          <em>Y. Deldjoo, T. Di Noia</em><br />
-          Venue: Under Review
-        </li>
-        <li>
-          <strong>Poison-RAG: Adversarial Data Poisoning Attacks on Retrieval-Augmented Generation</strong> (2024)<br />
-          <em>Y. Deldjoo, F. A. Merra, T. Di Noia</em><br />
-          Venue: Under Review
-        </li>
-      </ul>
+        <li><strong>“Understanding Biases in ChatGPT-based Recommender Systems”</strong> (Under Review, 2024). 
+          <em>Y. Deldjoo, V. W. Anelli, T. Di Noia</em></li>
 
-      <!-- 3) Trustworthy in Classical RecSys -->
-      <div class="macro-topic">Trustworthy in Classical RecSys</div>
-      <div class="macro-description">
-        Fairness, bias mitigation, and adversarial defenses for traditional recommendation approaches.
-      </div>
-      <ul>
-        <li>
-          <strong>Cpfair: Personalized Consumer and Producer Fairness Re-ranking</strong> 
-          (ACM TORS, 2024)<br />
-          <em>H. A. Rahmani, M. Naghiaei, Y. Deldjoo</em>
-        </li>
-        <li>
-          <strong>Fairness in Recommender Systems: Research Landscape and Future Directions</strong> 
-          (UMUAI, 2023)<br />
-          <em>Y. Deldjoo, T. Di Noia, F. A. Merra, M. S. Mansour</em>
-        </li>
-        <li>
-          <strong>A Survey on Adversarial Recommender Systems</strong> (ACM CSUR, 2022)<br />
-          <em>Y. Deldjoo, T. Di Noia, F. A. Merra</em>
-        </li>
-      </ul>
+        <li><strong>“Poison-RAG: Adversarial Data Poisoning Attacks on Retrieval-Augmented Generation”</strong> 
+          (Under Review, 2024). 
+          <em>Y. Deldjoo, F. A. Merra, T. Di Noia</em></li>
 
-      <!-- 4) Data & Dataset Characteristics -->
-      <div class="macro-topic">Data &amp; Dataset Characteristics</div>
-      <div class="macro-description">
-        How dataset properties influence model vulnerability, fairness, and overall performance.
-      </div>
-      <ul>
-        <li>
-          <strong>How Dataset Characteristics Affect the Robustness of Collaborative Recommendation Models</strong> 
-          (2023)<br />
-          <em>Y. Deldjoo, V. W. Anelli, H. A. Rahmani, M. Naghiaei</em><br />
-          Venue: Under Review
-        </li>
-        <li>
-          <strong>Explaining Recommender Systems Fairness and Accuracy through the Lens of Data</strong> (2023)<br />
-          <em>Y. Deldjoo, V. W. Anelli, M. Naghiaei</em><br />
-          Venue: Under Review
-        </li>
-      </ul>
+        <li><strong>“Fairness in Recommender Systems: Research Landscape and Future Directions”</strong> 
+          (UMUAI, 2023). 
+          <em>Y. Deldjoo, T. Di Noia, F. A. Merra, M. S. Mansour</em></li>
 
-      <!-- 5) Evaluation Frameworks -->
-      <div class="macro-topic">Evaluation Frameworks (Fairness, Gen-RecSys)</div>
-      <div class="macro-description">
-        Unified frameworks and metrics to systematically measure fairness and generative model performance.
-      </div>
-      <ul>
-        <li>
-          <strong>A Flexible Framework for Evaluating User and Item Fairness in Recommender Systems</strong> 
-          (2023)<br />
-          <em>Y. Deldjoo, L. Belli, G. Faggioli, T. Di Noia</em><br />
-          Venue: Under Review
-        </li>
-        <li>
-          <strong>A Unifying and General Account of Fairness Measurement in Recommender Systems</strong> (2023)<br />
-          <em>Y. Deldjoo, T. Chen, N. Mansour, T. Di Noia</em><br />
-          Venue: Under Review
-        </li>
-      </ul>
+        <li><strong>“A Survey on Adversarial Recommender Systems”</strong> (ACM CSUR, 2021). 
+          <em>Y. Deldjoo, T. Di Noia, F. A. Merra</em></li>
 
-      <!-- 6) Application of LLM in Downstream RecSys/ML Task -->
-      <div class="macro-topic">Application of LLM in Downstream RecSys/ML Tasks</div>
-      <div class="macro-description">
-        Leveraging large language models for specialized domains such as healthcare.
-      </div>
-      <ul>
-        <li>
-          <strong>ChatGPT-HealthPrompt: Harnessing XAI in Prompt-Based Healthcare Decision Support</strong> 
-          (XI-ML@ECAI, 2023)<br />
-          <em>F. Nazary, Y. Deldjoo, T. Di Noia</em>
-        </li>
-      </ul>
+        <li><strong>“How Dataset Characteristics Affect the Robustness of Collaborative Recommendation Models”</strong> 
+          (SIGIR, 2020). 
+          <em>Y. Deldjoo, V. W. Anelli, T. Di Noia, et al.</em></li>
 
-      <!-- 7) Multimodal RecSys & Fashion AI -->
-      <div class="macro-topic">Multimodal RecSys &amp; Fashion AI</div>
-      <div class="macro-description">
-        Integrating visual, textual, and conversational signals in domains like fashion and beyond.
-      </div>
-      <ul>
-        <li>
-          <strong>Towards Multi-Modal Conversational Information Seeking</strong> (2023)<br />
-          <em>Y. Deldjoo, V. W. Anelli, P. Lops, T. Di Noia</em><br />
-          Venue: Under Review
-        </li>
-        <li>
-          <strong>A Review of Modern Fashion Recommender Systems</strong> (ACM CSUR, 2023)<br />
-          <em>Y. Deldjoo, D. Malitesta, T. Chen, F. A. Merra</em>
-        </li>
-      </ul>
+        <li><strong>“Audio-Visual Encoding of User Facial Expressions for Emotion-Aware Recommendations”</strong> 
+          (RecSys, 2018). 
+          <em>Y. Deldjoo, M. Schedl, P. Lops, T. Di Noia</em></li>
 
-      <!-- Additional references: Surveys, Tutorials, Book Chapters -->
-      <h4 class="section-heading">Surveys</h4>
-      <ul>
-        <li>
-          <strong>Fairness in Recommender Systems: Research Landscape and Future Directions</strong> 
-          (UMUAI, 2023)<br />
-          <em>Y. Deldjoo, T. Di Noia, F. A. Merra, M. S. Mansour</em><br />
-          <a href="https://doi.org/10.1007/s11257-023-09364-z" target="_blank" class="accent-link">[Link]</a>
-        </li>
-        <li>
-          <strong>A Survey on Adversarial Recommender Systems</strong> (ACM CSUR, 2022)<br />
-          <em>Y. Deldjoo, T. Di Noia, F. A. Merra</em><br />
-          <a href="https://dl.acm.org/doi/abs/10.1145/3439729" target="_blank" class="accent-link">[Link]</a>
-        </li>
-      </ul>
+        <li><strong>“Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation”</strong> 
+          (RecSys, 2022). 
+          <em>H. A. Rahmani, M. Naghiaei, A. Tourani, Y. Deldjoo</em></li>
 
-      <h4 class="section-heading">Tutorials</h4>
-      <ul>
-        <li>
-          <strong>Understanding Language Modeling Paradigm Adaptations in Recommender Systems</strong> (ECAI'24)<br />
-          <em>L. Zhang, P. Liu, Y. Deldjoo, A. Felfernig</em>
-        </li>
-        <li>
-          <strong>Pursuing Privacy in Recommender Systems</strong> (RecSys'21)<br />
-          <em>V. W. Anelli, L. Belli, Y. Deldjoo, T. Di Noia</em>
-        </li>
-      </ul>
-
-      <h4 class="section-heading">Book &amp; Book Chapters</h4>
-      <ul>
-        <li>
-          <strong>Recommendation with Generative Models</strong> (Forthcoming, 2025)<br />
-          <em>Y. Deldjoo, M. S. Mansour, M. Larson, G. Faggioli</em>
-        </li>
-        <li>
-          <strong>Multimedia Recommender Systems: Algorithms and Challenges</strong> 
-          (Recommender Systems Handbook, 2023)<br />
-          <em>Y. Deldjoo, V. W. Anelli, M. Schedl</em>
-        </li>
-        <li>
-          <strong>Adversarial Recommender Systems: Attack, Defense, and Advances</strong> 
-          (Recommender Systems Handbook, 2023)<br />
-          <em>V. W. Anelli, Y. Deldjoo, L. Belli</em>
-        </li>
-      </ul>
-
-      <h4 class="section-heading">Other Technical Papers</h4>
-      <ul>
-        <li>
-          <strong>Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation</strong> 
-          (RecSys, 2022)<br />
-          <em>H. A. Rahmani, M. Naghiaei, A. Tourani, Y. Deldjoo</em>
-        </li>
-        <li>
-          <strong>Audio-Visual Encoding of User Facial Expressions for Emotion-Aware Recommendations</strong> 
-          (RecSys, 2018)<br />
-          <em>Y. Deldjoo, M. Schedl, P. Lops, T. Di Noia</em>
-        </li>
+        <li><strong>“Movie Genome: Alleviating New Item Cold Start in Movie Recommendation”</strong> 
+          (UMUAI, 2019). 
+          <em>Y. Deldjoo, M. F. Dacrema, M. G. Constantin, et al.</em></li>
       </ul>
     </div>
   </div>
