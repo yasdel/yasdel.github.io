@@ -74,9 +74,9 @@
       color: #666;
     }
     a.accent-link {
-  color: #000000; /* Always black */
-  text-decoration: none; /* Optional: removes underline */
-}
+      color: #000000;
+      text-decoration: none;
+    }
     a.accent-link:hover {
       text-decoration: underline;
     }
@@ -108,7 +108,6 @@
     .badge-multimedia {
       background-color: #6f42c1;  /* purple */
     }
-    /* Sample styling for small company logos next to badges */
     .company-logo {
       height: 15px;
       margin-left: 6px;
@@ -147,7 +146,7 @@
         
         <br /><br />
         He recently led a multidisciplinary collaboration involving Amazon, DeepMind, and several leading universities 
-        for an upcoming book at FN&TIR'25,  
+        for an upcoming book at FN&amp;TIR'25,  
         <strong><a href="https://arxiv.org/abs/2409.15173" target="_blank" class="accent-link">
           Next-Generation Recommender Systems under Generative AI (Gen-RecSys)</a></strong>,
         which explores advanced generative techniques. A widely recognized survey version of this book was presented 
@@ -296,21 +295,67 @@
       <!-- Surveys & Book Chapters -->
       <h4 class="section-heading">Surveys &amp; Book Chapters</h4>
       <ul>
+        <!-- 2025 -->
         <li>
           <a href="https://arxiv.org/abs/2409.15173" target="_blank" class="accent-link">
             <strong>“Recommendation with Generative Models”</strong>
-          </a> 
+          </a>
           (Forthcoming Book, 2025)
           <span class="badge-area badge-genrec">Gen-RecSys</span><br/>
-          Authors: <u>Y. Deldjoo</u>, Z. He, J. McAuley, et al.
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Zhen&nbsp;He, Julian&nbsp;McAuley, Markus&nbsp;Schedl, 
+          Dietmar&nbsp;Jannach, M.&nbsp;Larson, X.&nbsp;He, and others
         </li>
+
+        <!-- 2024 -->
+        <li>
+          <strong>“Fairness in Recommender Systems: Research Landscape and Future Directions”</strong>
+          <span class="badge-area badge-fairness">Fairness</span>
+          (User Modeling and User-Adapted Interaction, vol. 34, no. 1, 2024, 
+          Q1-IF: 4.682, doi: 
+          <a href="https://doi.org/10.1007/s11257-023-09364-z" target="_blank" class="accent-link">
+            10.1007/s11257-023-09364-z
+          </a>)
+          <br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Dietmar&nbsp;Jannach, Alejandro&nbsp;Bellogin, 
+          Andrea&nbsp;Difonzo, Daniele&nbsp;Zanzonelli
+        </li>
+        <li>
+          <strong>“Interactive Question Answering Systems: Literature Review”</strong>
+          <span class="badge-area badge-genrec">Survey</span>
+          (ACM Computing Surveys, vol. 56, no. 9, 2024, 
+          doi: 
+          <a href="https://doi.org/10.1145/3657631" target="_blank" class="accent-link">
+            10.1145/3657631
+          </a>)
+          <br/>
+          Authors: 
+          Gian&nbsp;Marco&nbsp;Biancofiore, <u>Yashar&nbsp;Deldjoo</u>, Tommaso&nbsp;Di&nbsp;Noia, 
+          Eugenio&nbsp;Di&nbsp;Sciascio, Floriana&nbsp;Narducci
+        </li>
+        <li>
+          <strong>“Content-driven Music Recommendation: Evolution, State of the Art, and Challenges”</strong>
+          <span class="badge-area badge-multimedia">Multimedia</span>
+          (Computer Science Review, vol. 51, 2024, Q1-IF: 7.872, 
+          doi: 
+          <a href="https://doi.org/10.1016/j.cosrev.2024.100618" target="_blank" class="accent-link">
+            10.1016/j.cosrev.2024.100618
+          </a>)
+          <br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Markus&nbsp;Schedl, Peter&nbsp;Knees
+        </li>
+
+        <!-- 2023 -->
         <li>
           <a href="https://doi.org/10.1007/978-1-0716-2197-4_25" target="_blank" class="accent-link">
             <strong>“Multimedia Recommender Systems: Algorithms and Challenges”</strong>
           </a> 
           <span class="badge-area badge-multimedia">Multimedia</span> 
           (In: Recommender Systems Handbook, 2023)<br/>
-          Authors: <u>Y. Deldjoo</u>, M. Schedl, B. Hidasi
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Markus&nbsp;Schedl, Balázs&nbsp;Hidasi
         </li>
         <li>
           <a href="https://doi.org/10.1007/978-1-0716-2197-4_9" target="_blank" class="accent-link">
@@ -318,14 +363,8 @@
           </a>
           <span class="badge-area badge-security">Security</span> 
           (In: Recommender Systems Handbook, 2023)<br/>
-          Authors: V. W. Anelli, <u>Y. Deldjoo</u>, L. Belli
-        </li>
-        <li>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3439729" target="_blank" class="accent-link">
-            <strong>“A Survey on Adversarial Recommender Systems”</strong>
-          </a>
-          <span class="badge-area badge-security">Security</span> (ACM CSUR, 2021)<br/>
-          Authors: <u>Y. Deldjoo</u>, T. Di Noia, F. A. Merra
+          Authors: 
+          Vito&nbsp;Walter&nbsp;Anelli, <u>Yashar&nbsp;Deldjoo</u>, Ludovico&nbsp;Belli
         </li>
         <li>
           <a href="https://dl.acm.org/doi/abs/10.1145/3624733" target="_blank" class="accent-link">
@@ -333,15 +372,36 @@
           </a>
           <span class="badge-area badge-fashion">Fashion</span>
           <img src="img/placeholder_amazon_logo.png" alt="Amazon" class="company-logo" />
-          (ACM CSUR, 2023)<br/>
-          Authors: <u>Y. Deldjoo</u>, F. Nazary, J. McAuley, A. Ramisa, et al.
+          (ACM Computing Surveys, Oct. 2023, Q1-IF: 23.8)<br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Fatemeh&nbsp;Nazary, Julian&nbsp;McAuley, Adriana&nbsp;Ramisa, 
+          Alejandro&nbsp;Bellogin, Tommaso&nbsp;di&nbsp;Noia
+        </li>
+
+        <!-- 2021 -->
+        <li>
+          <a href="https://dl.acm.org/doi/abs/10.1145/3439729" target="_blank" class="accent-link">
+            <strong>“A Survey on Adversarial Recommender Systems”</strong>
+          </a>
+          <span class="badge-area badge-security">Security</span> (ACM CSUR, 2021)<br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Tommaso&nbsp;Di&nbsp;Noia, Felice&nbsp;Antonio&nbsp;Merra
         </li>
       </ul>
 
       <!-- Selected Journal & Conference Papers -->
       <h4 class="section-heading">Selected Papers</h4>
       <ul>
-        <!-- 1 -->
+        <!-- 2025 -->
+        <li>
+          <strong>“Poison-RAG: Adversarial Data Poisoning Attacks on Retrieval-Augmented Generation in Recommender Systems”</strong>
+          <span class="badge-area badge-security">Security</span>
+          (ECIR’25)<br/>
+          Authors: 
+          Fatemeh&nbsp;Nazary, <u>Yashar&nbsp;Deldjoo</u>, Tommaso&nbsp;di&nbsp;Noia
+        </li>
+
+        <!-- 2024 -->
         <li>
           <a href="https://dl.acm.org/doi/abs/10.1145/3637528.3671474" target="_blank" class="accent-link">
             <strong>“A Review of Modern Recommender Systems using Generative Models (Gen-RecSys)”</strong>
@@ -349,95 +409,113 @@
           <span class="badge-area badge-genrec">Gen-RecSys</span>
           <img src="img/placeholder_deepmind_logo.png" alt="DeepMind" class="company-logo" />
           (KDD’24)<br/>
-          Authors: <u>Y. Deldjoo</u>, Z. He, J. McAuley, et al.
+          Authors:
+          <u>Yashar&nbsp;Deldjoo</u>, Zhen&nbsp;He, Julian&nbsp;McAuley, Domenico&nbsp;Quaglia, 
+          Shaghayegh&nbsp;Sahebi, Hamed&nbsp;Zamani, Markus&nbsp;Schedl, Dietmar&nbsp;Jannach
         </li>
-        <!-- 2 -->
         <li>
-          <a href="https://arxiv.org/abs/2403.05668" target="_blank" class="accent-link">
-            <strong>“Understanding Biases in ChatGPT-based Recommender Systems”</strong>
-          </a>
-          <span class="badge-area badge-fairness">Fairness</span> (Under Review, 2024)<br/>
-          Authors: <u>Y. Deldjoo</u>, V. W. Anelli, T. Di Noia
+          <strong>“CFaiRLLM: Consumer Fairness Evaluation in Large-Language Model Recommender System”</strong>
+          <span class="badge-area badge-fairness">Fairness</span>
+          (ACM Transactions on Intelligent Systems and Technology, accepted, 2024)<br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Tommaso&nbsp;Di&nbsp;Noia
         </li>
-        <!-- 3 -->
         <li>
-          <a href="https://arxiv.org/abs/2501.11759" target="_blank" class="accent-link">
-            <strong>“Poison-RAG: Adversarial Data Poisoning Attacks on Retrieval-Augmented Generation”</strong>
-          </a>
-          <span class="badge-area badge-security">Security</span> (Under Review, 2024)<br/>
-          Authors: <u>Y. Deldjoo</u>, F. A. Merra, T. Di Noia
+          <strong>“Understanding Biases in ChatGPT-based Recommender Systems: Provider Fairness, Temporal Stability, and Recency”</strong>
+          <span class="badge-area badge-fairness">Fairness</span>
+          (ACM Transactions on Recommender Systems, 2024, 
+          doi: 
+          <a href="https://doi.org/10.1145/3690655" target="_blank" class="accent-link">
+            10.1145/3690655
+          </a>)<br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>
         </li>
-        <!-- 4 -->
+
+        <!-- 2023 -->
         <li>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3397271.3401046" target="_blank" class="accent-link">
-            <strong>“How Dataset Characteristics Affect the Robustness of Collaborative Recommendation Models”</strong>
-          </a>
-          <span class="badge-area badge-security">Security</span> (SIGIR, 2020)<br/>
-          Authors: <u>Y. Deldjoo</u>, V. W. Anelli, T. Di Noia, E. Di Sciascio
+          <strong>“Computational versus Perceived Popularity Miscalibration in Recommender Systems”</strong>
+          <span class="badge-area badge-genrec">Recsys Analysis</span>
+          (SIGIR’23, doi: 
+          <a href="https://doi.org/10.1145/3539618.3591964" target="_blank" class="accent-link">
+            10.1145/3539618.3591964
+          </a>)<br/>
+          Authors: 
+          Oleg&nbsp;Lesota, Gustavo&nbsp;Escobedo, <u>Yashar&nbsp;Deldjoo</u>, Bruce&nbsp;Ferwerda, 
+          Simone&nbsp;Kopeinik, Elisabeth&nbsp;Lex, Navid&nbsp;Rekabsaz, Markus&nbsp;Schedl
         </li>
-        <!-- 5 -->
         <li>
-          <a href="https://doi.org/10.1145/3460231.3473326" target="_blank" class="accent-link">
-            <strong>“Pursuing Privacy in Recommender Systems”</strong>
-          </a>
-          <span class="badge-area badge-privacy">Privacy</span> (RecSys’21 Tutorial)<br/>
-          Authors: V. W. Anelli, L. Belli, <u>Y. Deldjoo</u>, T. Di Noia
+          <strong>“A Unifying and General Account of Fairness Measurement in Recommender Systems”</strong>
+          <span class="badge-area badge-fairness">Fairness</span>
+          (Information Processing &amp; Management, 2023, Q1-IF: 6.22, 
+          doi: 
+          <a href="https://doi.org/10.1016/j.ipm.2022.103115" target="_blank" class="accent-link">
+            10.1016/j.ipm.2022.103115
+          </a>)<br/>
+          Authors: 
+          Enrique&nbsp;Amigó, <u>Yashar&nbsp;Deldjoo</u>, Stefano&nbsp;Mizzaro, Alejandro&nbsp;Bellogin
         </li>
-        <!-- 6 -->
-        <li>
-          <a href="https://doi.org/10.1007/s11257-023-09364-z" target="_blank" class="accent-link">
-            <strong>“Fairness in Recommender Systems: Research Landscape and Future Directions”</strong>
-          </a>
-          <span class="badge-area badge-fairness">Fairness</span> (UMUAI, 2023)<br/>
-          Authors: <u>Y. Deldjoo</u>, T. Di Noia, F. A. Merra, M. S. Mansour
-        </li>
-        <!-- 7 -->
-        <li>
-          <a href="https://doi.org/10.1145/3511808.3551481" target="_blank" class="accent-link">
-            <strong>“Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation”</strong>
-          </a>
-          <span class="badge-area badge-fairness">Fairness</span> (RecSys, 2022)<br/>
-          Authors: H. A. Rahmani, M. Naghiaei, A. Tourani, <u>Y. Deldjoo</u>
-        </li>
-        <!-- 8 -->
-        <li>
-          <a href="https://doi.org/10.1016/j.eswa.2022.118368" target="_blank" class="accent-link">
-            <strong>“Visual Inspection of Fault Type and Zone Prediction in Electrical Grids”</strong>
-          </a>
-          <span class="badge-area badge-security">Security</span> (ESWA, 2022)<br/>
-          Authors: C. Ardito, <u>Y. Deldjoo</u>, T. Di Noia, E. Di Sciascio, F. Nazary
-        </li>
-        <!-- 9 -->
-        <li>
-          <a href="https://doi.org/10.1145/3240323.3240407" target="_blank" class="accent-link">
-            <strong>“Audio-Visual Encoding of User Facial Expressions for Emotion-Aware Recommendations”</strong>
-          </a>
-          <span class="badge-area badge-multimedia">Multimedia</span> (RecSys, 2018)<br/>
-          Authors: <u>Y. Deldjoo</u>, M. Schedl, P. Lops, T. Di Noia
-        </li>
-        <!-- 10 -->
-        <li>
-          <a href="https://doi.org/10.1007/s11257-019-09221-y" target="_blank" class="accent-link">
-            <strong>“Movie Genome: Alleviating New Item Cold Start in Movie Recommendation”</strong>
-          </a>
-          <span class="badge-area badge-multimedia">Multimedia</span> (UMUAI, 2019)<br/>
-          Authors: <u>Y. Deldjoo</u>, M. F. Dacrema, M. G. Constantin, H. Eghbal-zadeh, et al.
-        </li>
-        <!-- 11: Additional Conference Paper -->
         <li>
           <a href="https://doi.org/10.1007/978-3-031-28244-7_3" target="_blank" class="accent-link">
             <strong>“Auditing Consumer &amp; Producer Fairness in Graph Collaborative Filtering”</strong>
           </a>
           <span class="badge-area badge-fairness">Fairness</span> (ECIR, 2023)<br/>
-          Authors: V. W. Anelli, <u>Y. Deldjoo</u>, T. Di Noia, D. Malitesta, C. Pomo
+          Authors: 
+          Vito&nbsp;Walter&nbsp;Anelli, <u>Yashar&nbsp;Deldjoo</u>, Tommaso&nbsp;Di&nbsp;Noia, 
+          Daniele&nbsp;Malitesta, Carmine&nbsp;Pomo, Valerio&nbsp;Paparella
         </li>
-        <!-- 12: Another Conf Paper -->
+
+        <!-- 2022 -->
+        <!-- (No direct new entries for 2022 in this updated list, but keep existing references if any) -->
+
+        <!-- 2021 -->
         <li>
-          <a href="https://doi.org/10.1145/3404835.3462848" target="_blank" class="accent-link">
-            <strong>“A Study of Defensive Methods to Protect Visual Recommendation against Adversarial Manipulations”</strong>
+          <a href="https://doi.org/10.1145/3460231.3473326" target="_blank" class="accent-link">
+            <strong>“Pursuing Privacy in Recommender Systems”</strong>
           </a>
-          <span class="badge-area badge-security">Security</span> (SIGIR, 2021)<br/>
-          Authors: V. W. Anelli, <u>Y. Deldjoo</u>, T. Di Noia, D. Malitesta, F. A. Merra
+          <span class="badge-area badge-privacy">Privacy</span> 
+          (RecSys’21 Tutorial)<br/>
+          Authors: 
+          Vito&nbsp;Walter&nbsp;Anelli, Ludovico&nbsp;Belli, <u>Yashar&nbsp;Deldjoo</u>, 
+          Tommaso&nbsp;Di&nbsp;Noia
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/s11257-020-09285-1" target="_blank" class="accent-link">
+            <strong>“A Flexible Framework for Evaluating User and Item Fairness in Recommender Systems”</strong>
+          </a>
+          <span class="badge-area badge-fairness">Fairness</span>
+          (UMUAI, Special Issue on FATRec, 2021)<br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Vito&nbsp;Walter&nbsp;Anelli, Hamed&nbsp;Zamani, 
+          Alejandro&nbsp;Bellogin, Tommaso&nbsp;Di&nbsp;Noia
+        </li>
+        <li>
+          <a href="https://doi.org/10.1016/j.ipm.2021.102662" target="_blank" class="accent-link">
+            <strong>“Explaining Recommender Systems Fairness and Accuracy through the Lens of Data Characteristics”</strong>
+          </a>
+          <span class="badge-area badge-fairness">Fairness</span>
+          (Information Processing &amp; Management, 2021)<br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Alejandro&nbsp;Bellogin, Tommaso&nbsp;di&nbsp;Noia
+        </li>
+        <li>
+          <a href="https://doi.org/10.1145/3397271.3401046" target="_blank" class="accent-link">
+            <strong>“How Dataset Characteristics Affect the Robustness of Collaborative Recommendation Models”</strong>
+          </a>
+          <span class="badge-area badge-security">Security</span> (SIGIR, 2020 published in 2021 proceedings)<br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Vito&nbsp;Walter&nbsp;Anelli, Tommaso&nbsp;Di&nbsp;Noia, 
+          Eugenio&nbsp;Di&nbsp;Sciascio
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/s11257-019-09221-y" target="_blank" class="accent-link">
+            <strong>“Movie Genome: Alleviating New Item Cold Start in Movie Recommendation”</strong>
+          </a>
+          <span class="badge-area badge-multimedia">Multimedia</span> (UMUAI, 2019)<br/>
+          Authors: 
+          <u>Yashar&nbsp;Deldjoo</u>, Maurizio&nbsp;Ferrari&nbsp;Dacrema, 
+          Mihai&nbsp;Gheorghita&nbsp;Constantin, Hamid&nbsp;Eghbal-Zadeh, Simone&nbsp;Cereda, 
+          Markus&nbsp;Schedl, Bogdan&nbsp;Ionescu, Paolo&nbsp;Cremonesi
         </li>
       </ul>
 
@@ -445,25 +523,28 @@
       <h4 class="section-heading">Workshops &amp; Extended Abstracts</h4>
       <ul>
         <li>
+          <a href="https://arxiv.org/abs/2405.06270" target="_blank" class="accent-link">
+            <strong>“ChatGPT-HealthPrompt: Harnessing the Power of XAI in Prompt-Based Healthcare Decision Support using ChatGPT”</strong>
+          </a>
+          <span class="badge-area badge-genrec">Gen-RecSys</span> (ECAI, 2023)<br/>
+          Authors: 
+          Fatemeh&nbsp;Nazary, <u>Yashar&nbsp;Deldjoo</u>, Tommaso&nbsp;Di&nbsp;Noia
+        </li>
+        <li>
           <a href="https://arxiv.org/abs/2303.18136" target="_blank" class="accent-link">
             <strong>“Smart Electrical Grids under the Lens of Adversarial Attacks”</strong>
           </a>
           <span class="badge-area badge-security">Security</span> (AdvML@KDD, 2022)<br/>
-          Authors: C. Ardito, <u>Y. Deldjoo</u>, et al.
+          Authors: 
+          Carmine&nbsp;Ardito, <u>Yashar&nbsp;Deldjoo</u>, and others
         </li>
         <li>
-          <a href="https://arxiv.org/abs/2405.06270" target="_blank" class="accent-link">
-            <strong>“ChatGPT-HealthPrompt: Harnessing XAI in Prompt-Based Healthcare”</strong>
-          </a>
-          <span class="badge-area badge-genrec">Gen-RecSys</span> (ECAI, 2023)<br/>
-          Authors: F. Nazary, <u>Y. Deldjoo</u>, T. Di Noia
-        </li>
-        <li>
-          <a href="https://doi.org/10.1145/3109859.3109908" target="_blank" class="accent-link">
+          <a href="https://arxiv.org/abs/3109859.3109908" target="_blank" class="accent-link">
             <strong>“Exploring the Semantic Gap for Movie Recommendations”</strong>
           </a>
           <span class="badge-area badge-multimedia">Multimedia</span> (RecSys, 2017)<br/>
-          Authors: M. Elahi, <u>Y. Deldjoo</u>, F. B. Moghaddam, et al.
+          Authors: 
+          Mehdi&nbsp;Elahi, <u>Yashar&nbsp;Deldjoo</u>, Farzan&nbsp;B.~Moghaddam, and others
         </li>
       </ul>
     </div>
