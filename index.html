@@ -37,20 +37,17 @@
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
-    /* Ensure the bio text remains black */
     .short-bio {
       text-align: justify;
       margin-top: 0.5rem;
       color: #333;
     }
-    /* Apply red styling to the Highlights block regardless of its location */
     .short-version {
       color: #d9534f; /* accent color (red) */
       font-style: italic;
       display: block;
       margin-top: 0.75rem;
     }
-    /* Also force bullet items to be red */
     .short-version ul li {
       color: #d9534f;
     }
@@ -83,6 +80,34 @@
     a.accent-link:hover {
       text-decoration: underline;
     }
+    /* Inline badge styles for area labeling */
+    .badge-area {
+      display: inline-block;
+      border-radius: 4px;
+      padding: 2px 6px;
+      color: #fff;
+      font-size: 0.75em;
+      margin-left: 7px;
+      vertical-align: middle;
+    }
+    .badge-fairness {
+      background-color: #5cb85c;
+    }
+    .badge-fashion {
+      background-color: #5bc0de;
+    }
+    .badge-genrec {
+      background-color: #f0ad4e;
+    }
+    .badge-privacy {
+      background-color: #0275d8;
+    }
+    .badge-security {
+      background-color: #d9534f;
+    }
+    .badge-multimedia {
+      background-color: #6f42c1;
+    }
     @media(max-width: 767px){
       .profile-photo {
         margin-bottom: 20px;
@@ -102,9 +127,8 @@
         Senior Researcher &amp; Assistant Professor, Polytechnic University of Bari
       </div>
       
-      <!-- Bio remains in normal black -->
       <p class="short-bio">
-        Dr. Yashar Deldjoo is a senior research scientist and a tenure-track Assistant Professor 
+        Dr. <u>Yashar Deldjoo</u> is a senior research scientist and a tenure-track Assistant Professor 
         in Computer Science at the Polytechnic University of Bari, Italy, recognized among the 
         top 2% of researchers worldwide (Stanford’s Ioannidis database, 2023–2024). 
         His work focuses on integrating elements of <strong>trustworthy and responsible AI</strong> 
@@ -211,24 +235,23 @@
     </div>
   </div>
 
-  <!-- ========== NEW SECTION: KEYNOTES & INVITED TALKS ========== -->
+  <!-- Keynotes & Invited Talks -->
   <div class="row mt-4">
     <div class="col-md-12">
       <h2 class="section-heading">Keynotes &amp; Invited Talks</h2>
       <ul>
         <li><strong>2025 – WSDM’25 (China):</strong> “Recommendation with Generative Models” (Tutorial)</li>
-        <li><strong>August 2024 – KDD’24 Workshop (Barcelona):</strong> “Generative AI for RecSys” (Panelist) </li>
+        <li><strong>August 2024 – KDD’24 Workshop (Barcelona):</strong> “Generative AI for RecSys” (Panelist)</li>
         <li><strong>2024 – ECAI’24 (Poland):</strong> “Understanding Language Modeling Paradigm Adaptations in Recommender Systems” (Tutorial)</li>
-        <li><strong>November 2021 – Vector Institute for AI (Toronto, Canada):</strong> “Fairness and Biases of ML in RecSys” (Invited Talk)</li>
-        <li><strong>October 2021 – BMW Artificial Intelligence (Munich, Germany):</strong> “Fairness &amp; Bias in ML-based Systems” (Invited Talk)</li>
+        <li><strong>November 2021 – Vector Institute for AI (Toronto, Canada):</strong> “Fairness and Biases of ML in RecSys”</li>
+        <li><strong>October 2021 – BMW Artificial Intelligence (Munich, Germany):</strong> “Fairness &amp; Bias in ML-based Systems”</li>
         <li><strong>2021 – RecSys’21 (Amsterdam):</strong> “Pursuing Privacy in Recommender Systems” (Tutorial)</li>
         <li><strong>2021 – ECIR’21 (Virtual):</strong> “Adversarial Learning for Recommendation” (Tutorial)</li>
-        <li><strong>2020 – RecSys’20 (Brazil):</strong> “Adversarial Learning for Recommendation: From Concept to Code” (Tutorial)</li>
+        <li><strong>2020 – RecSys’20 (Brazil):</strong> “Adversarial Learning for Recommendation: From Concept to Code”</li>
         <li><strong>2018 – RecSys’18 (Vancouver):</strong> “Multimedia Recommender Systems” (Tutorial)</li>
       </ul>
     </div>
   </div>
-  <!-- ========== END NEW SECTION ========== -->
 
   <!-- Editorial & Service Roles -->
   <div class="row mt-4">
@@ -243,12 +266,12 @@
     </div>
   </div>
 
-  <!-- Publications section (Simplified/Selected) -->
+  <!-- Publications section -->
   <div class="row mt-4">
     <div class="col-md-12">
       <h2 class="section-heading">Publications</h2>
       <p>
-        Below is a curated sample of influential papers (e.g., journals, SIGIR, RecSys). 
+        Below is an extended selection of influential papers (journals, conference proceedings). 
         For a comprehensive list, please see 
         <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank" class="accent-link">
           <strong>Google Scholar</strong>
@@ -257,40 +280,119 @@
           <strong>DBLP</strong>
         </a>.
       </p>
-      
+
+      <!-- Surveys & Book Chapters -->
+      <h4 class="section-heading">Surveys &amp; Book Chapters</h4>
       <ul>
-        <li><strong>“Recommendation with Generative Models”</strong> (Book, 2025). 
-          <em>Y. Deldjoo, Z. He, J. McAuley, et al.</em></li>
+        <li>
+          <a href="https://arxiv.org/abs/2409.15173" target="_blank">
+            <strong>“Recommendation with Generative Models”</strong>
+          </a> 
+          (Forthcoming Book, 2025)
+          <span class="badge-area badge-genrec">Gen-RecSys</span><br/>
+          Authors: Z. He, <u>Y. Deldjoo</u>, J. McAuley, et al.
+        </li>
+        <li>
+          <a href="https://dl.acm.org/doi/abs/10.1145/3439729" target="_blank">
+            <strong>“A Survey on Adversarial Recommender Systems”</strong>
+          </a>
+          (ACM CSUR, 2021)
+          <span class="badge-area badge-security">Security</span><br/>
+          Authors: <u>Y. Deldjoo</u>, T. Di Noia, F. A. Merra
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/978-1-0716-2197-4_25" target="_blank">
+            <strong>“Multimedia Recommender Systems: Algorithms and Challenges”</strong>
+          </a> 
+          (In: Recommender Systems Handbook, Springer, 2023)
+          <span class="badge-area badge-multimedia">Multimedia</span><br/>
+          Authors: <u>Y. Deldjoo</u>, M. Schedl, B. Hidasi
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/978-1-0716-2197-4_9" target="_blank">
+            <strong>“Adversarial Recommender Systems: Attack, Defense, and Advances”</strong>
+          </a>
+          (In: Recommender Systems Handbook, Springer, 2023)
+          <span class="badge-area badge-security">Security</span><br/>
+          Authors: V. W. Anelli, <u>Y. Deldjoo</u>, L. Belli
+        </li>
+      </ul>
 
-        <li><strong>“Understanding Biases in ChatGPT-based Recommender Systems”</strong> (Under Review, 2024). 
-          <em>Y. Deldjoo, V. W. Anelli, T. Di Noia</em></li>
-
-        <li><strong>“Poison-RAG: Adversarial Data Poisoning Attacks on Retrieval-Augmented Generation”</strong> 
-          (Under Review, 2024). 
-          <em>Y. Deldjoo, F. A. Merra, T. Di Noia</em></li>
-
-        <li><strong>“Fairness in Recommender Systems: Research Landscape and Future Directions”</strong> 
-          (UMUAI, 2023). 
-          <em>Y. Deldjoo, T. Di Noia, F. A. Merra, M. S. Mansour</em></li>
-
-        <li><strong>“A Survey on Adversarial Recommender Systems”</strong> (ACM CSUR, 2021). 
-          <em>Y. Deldjoo, T. Di Noia, F. A. Merra</em></li>
-
-        <li><strong>“How Dataset Characteristics Affect the Robustness of Collaborative Recommendation Models”</strong> 
-          (SIGIR, 2020). 
-          <em>Y. Deldjoo, V. W. Anelli, T. Di Noia, et al.</em></li>
-
-        <li><strong>“Audio-Visual Encoding of User Facial Expressions for Emotion-Aware Recommendations”</strong> 
-          (RecSys, 2018). 
-          <em>Y. Deldjoo, M. Schedl, P. Lops, T. Di Noia</em></li>
-
-        <li><strong>“Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation”</strong> 
-          (RecSys, 2022). 
-          <em>H. A. Rahmani, M. Naghiaei, A. Tourani, Y. Deldjoo</em></li>
-
-        <li><strong>“Movie Genome: Alleviating New Item Cold Start in Movie Recommendation”</strong> 
-          (UMUAI, 2019). 
-          <em>Y. Deldjoo, M. F. Dacrema, M. G. Constantin, et al.</em></li>
+      <!-- Conference & Journal Papers -->
+      <h4 class="section-heading">Selected Papers</h4>
+      <ul>
+        <li>
+          <a href="https://dl.acm.org/doi/abs/10.1145/3637528.3671474" target="_blank">
+            <strong>“A Review of Modern Recommender Systems using Generative Models (Gen-RecSys)”</strong>
+          </a>
+          (KDD’24)
+          <span class="badge-area badge-genrec">Gen-RecSys</span><br/>
+          Authors: <u>Y. Deldjoo</u>, Z. He, J. McAuley, et al.
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/2403.05668" target="_blank">
+            <strong>“Understanding Biases in ChatGPT-based Recommender Systems”</strong>
+          </a>
+          (Under Review, 2024)
+          <span class="badge-area badge-fairness">Fairness</span><br/>
+          Authors: <u>Y. Deldjoo</u>, V. W. Anelli, T. Di Noia
+        </li>
+        <li>
+          <a href="https://dl.acm.org/doi/abs/10.1145/3397271.3401046" target="_blank">
+            <strong>“How Dataset Characteristics Affect the Robustness of Collaborative Recommendation Models”</strong>
+          </a>
+          (SIGIR, 2020)
+          <span class="badge-area badge-security">Security</span><br/>
+          Authors: <u>Y. Deldjoo</u>, V. W. Anelli, T. Di Noia, E. Di Sciascio
+        </li>
+        <li>
+          <a href="https://doi.org/10.1145/3460231.3473326" target="_blank">
+            <strong>“Pursuing Privacy in Recommender Systems”</strong>
+          </a>
+          (RecSys’21 Tutorial)
+          <span class="badge-area badge-privacy">Privacy</span><br/>
+          Authors: V. W. Anelli, L. Belli, <u>Y. Deldjoo</u>, T. Di Noia
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/s11257-023-09364-z" target="_blank">
+            <strong>“Fairness in Recommender Systems: Research Landscape and Future Directions”</strong>
+          </a>
+          (UMUAI, 2023)
+          <span class="badge-area badge-fairness">Fairness</span><br/>
+          Authors: <u>Y. Deldjoo</u>, T. Di Noia, F. A. Merra, M. S. Mansour
+        </li>
+        <li>
+          <a href="https://doi.org/10.1145/3511808.3551481" target="_blank">
+            <strong>“Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation”</strong>
+          </a>
+          (RecSys, 2022)
+          <span class="badge-area badge-fairness">Fairness</span><br/>
+          Authors: H. A. Rahmani, M. Naghiaei, A. Tourani, <u>Y. Deldjoo</u>
+        </li>
+        <li>
+          <a href="https://doi.org/10.1016/j.eswa.2022.118368" target="_blank">
+            <strong>“Visual Inspection of Fault Type and Zone Prediction in Electrical Grids”</strong>
+          </a>
+          (ESWA, 2022)
+          <span class="badge-area badge-security">Security</span><br/>
+          Authors: C. Ardito, <u>Y. Deldjoo</u>, T. Di Noia, E. Di Sciascio, F. Nazary
+        </li>
+        <li>
+          <a href="https://doi.org/10.1145/3240323.3240407" target="_blank">
+            <strong>“Audio-Visual Encoding of User Facial Expressions for Emotion-Aware Recommendations”</strong>
+          </a>
+          (RecSys, 2018)
+          <span class="badge-area badge-multimedia">Multimedia</span><br/>
+          Authors: <u>Y. Deldjoo</u>, M. Schedl, P. Lops, T. Di Noia
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/s11257-019-09221-y" target="_blank">
+            <strong>“Movie Genome: Alleviating New Item Cold Start in Movie Recommendation”</strong>
+          </a>
+          (UMUAI, 2019)
+          <span class="badge-area badge-multimedia">Multimedia</span><br/>
+          Authors: <u>Y. Deldjoo</u>, M. F. Dacrema, M. G. Constantin, H. Eghbal-zadeh, et al.
+        </li>
       </ul>
     </div>
   </div>
@@ -308,10 +410,19 @@
 
       <h2 class="section-heading">Education</h2>
       <ul>
-        <li>Ph.D. in Computer Science, Politecnico di Milano (2014–2018)</li>
+        <li>Ph.D. in Computer Science (Focus: Recommender Systems), Politecnico di Milano (2014–2018)</li>
         <li>M.Sc. in Electrical Engineering, Chalmers University of Technology (2008–2010)</li>
         <li>B.A. in English-Linguistics, University of Gothenburg (2007–2011)</li>
         <li>B.Sc. in Electrical Engineering, University of Guilan (2002–2006)</li>
+      </ul>
+
+      <h2 class="section-heading">Awards &amp; Honors</h2>
+      <ul>
+        <li>2021 – AdvML@KDD’21 Best Paper Award</li>
+        <li>2021 – CIKM’21 Short-Paper Runner-up Award</li>
+        <li>2019 – CBMI’19 Best Paper Award</li>
+        <li>Stanford University “Top 2% Scientists” recognition (2023–2024)</li>
+        <li>Doctorate with High Honors (Politecnico di Milano, 2018)</li>
       </ul>
     </div>
   </div>
@@ -319,7 +430,7 @@
   <!-- Footer -->
   <div class="footer">
     <p>
-      &copy; <span id="year"></span> Dr. Yashar Deldjoo | 
+      &copy; <span id="year"></span> Dr. <u>Yashar Deldjoo</u> | 
       <a href="mailto:deldjooy@acm.org">deldjooy@acm.org</a> | 
       <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank">Scholar</a> | 
       <a href="https://twitter.com/yashardel" target="_blank">Twitter</a> | 
