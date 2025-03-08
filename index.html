@@ -73,15 +73,16 @@
       text-align: center;
       color: #666;
     }
-a.accent-link {
-  color: #66d9e8;  /* Soft Aqua */
+    a.accent-link {
+  color: #000000; /* Black by default */
   text-decoration: none;
-}
-a.accent-link:hover {
-  text-decoration: underline;
-  color: #50b7d9;  /* Slightly darker for hover */
+  transition: color 0.3s ease;
 }
 
+a.accent-link:hover {
+  color: #66d9e8; /* Soft Aqua on hover */
+  text-decoration: underline;
+}
     /* Inline badges for thematic areas */
     .badge-area {
       display: inline-block;
