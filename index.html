@@ -73,14 +73,16 @@
       text-align: center;
       color: #666;
     }
+    /* A more stylish link color */
     a.accent-link {
-      color: #d9534f;
+      color: #1E90FF; /* DodgerBlue */
       text-decoration: none;
     }
     a.accent-link:hover {
       text-decoration: underline;
+      color: #0a78ec; 
     }
-    /* Inline badge styles for area labeling */
+    /* Inline badges for thematic areas */
     .badge-area {
       display: inline-block;
       border-radius: 4px;
@@ -91,22 +93,28 @@
       vertical-align: middle;
     }
     .badge-fairness {
-      background-color: #5cb85c;
+      background-color: #5cb85c;  /* greenish */
     }
     .badge-fashion {
-      background-color: #5bc0de;
+      background-color: #5bc0de;  /* light-blue */
     }
     .badge-genrec {
-      background-color: #f0ad4e;
+      background-color: #f0ad4e;  /* orange */
     }
     .badge-privacy {
-      background-color: #0275d8;
+      background-color: #0275d8;  /* darker blue */
     }
     .badge-security {
-      background-color: #d9534f;
+      background-color: #d9534f;  /* red */
     }
     .badge-multimedia {
-      background-color: #6f42c1;
+      background-color: #6f42c1;  /* purple */
+    }
+    /* Sample styling for small company logos next to badges */
+    .company-logo {
+      height: 15px;
+      margin-left: 6px;
+      vertical-align: middle;
     }
     @media(max-width: 767px){
       .profile-photo {
@@ -269,10 +277,11 @@
   <!-- Publications section -->
   <div class="row mt-4">
     <div class="col-md-12">
+
       <h2 class="section-heading">Publications</h2>
       <p>
-        Below is an extended selection of influential papers (journals, conference proceedings). 
-        For a comprehensive list, please see 
+        Below is an extended selection of influential works (journals, conference proceedings, 
+        surveys, and book chapters). For a comprehensive list, please see 
         <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank" class="accent-link">
           <strong>Google Scholar</strong>
         </a> or 
@@ -285,119 +294,146 @@
       <h4 class="section-heading">Surveys &amp; Book Chapters</h4>
       <ul>
         <li>
-          <a href="https://arxiv.org/abs/2409.15173" target="_blank">
+          <a href="https://arxiv.org/abs/2409.15173" target="_blank" class="accent-link">
             <strong>“Recommendation with Generative Models”</strong>
           </a> 
           (Forthcoming Book, 2025)
           <span class="badge-area badge-genrec">Gen-RecSys</span><br/>
-          Authors: Z. He, <u>Y. Deldjoo</u>, J. McAuley, et al.
-        </li>
-        <li>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3439729" target="_blank">
-            <strong>“A Survey on Adversarial Recommender Systems”</strong>
-          </a>
-          (ACM CSUR, 2021)
-          <span class="badge-area badge-security">Security</span><br/>
-          Authors: <u>Y. Deldjoo</u>, T. Di Noia, F. A. Merra
-        </li>
-        <li>
-          <a href="https://doi.org/10.1007/978-1-0716-2197-4_25" target="_blank">
-            <strong>“Multimedia Recommender Systems: Algorithms and Challenges”</strong>
-          </a> 
-          (In: Recommender Systems Handbook, Springer, 2023)
-          <span class="badge-area badge-multimedia">Multimedia</span><br/>
-          Authors: <u>Y. Deldjoo</u>, M. Schedl, B. Hidasi
-        </li>
-        <li>
-          <a href="https://doi.org/10.1007/978-1-0716-2197-4_9" target="_blank">
-            <strong>“Adversarial Recommender Systems: Attack, Defense, and Advances”</strong>
-          </a>
-          (In: Recommender Systems Handbook, Springer, 2023)
-          <span class="badge-area badge-security">Security</span><br/>
-          Authors: V. W. Anelli, <u>Y. Deldjoo</u>, L. Belli
-        </li>
-      </ul>
-
-      <!-- Conference & Journal Papers -->
-      <h4 class="section-heading">Selected Papers</h4>
-      <ul>
-        <li>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3637528.3671474" target="_blank">
-            <strong>“A Review of Modern Recommender Systems using Generative Models (Gen-RecSys)”</strong>
-          </a>
-          (KDD’24)
-          <span class="badge-area badge-genrec">Gen-RecSys</span><br/>
           Authors: <u>Y. Deldjoo</u>, Z. He, J. McAuley, et al.
         </li>
         <li>
-          <a href="https://arxiv.org/abs/2403.05668" target="_blank">
+          <a href="https://doi.org/10.1007/978-1-0716-2197-4_25" target="_blank" class="accent-link">
+            <strong>“Multimedia Recommender Systems: Algorithms and Challenges”</strong>
+          </a> 
+          <span class="badge-area badge-multimedia">Multimedia</span> 
+          (In: Recommender Systems Handbook, 2023)<br/>
+          Authors: <u>Y. Deldjoo</u>, M. Schedl, B. Hidasi
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/978-1-0716-2197-4_9" target="_blank" class="accent-link">
+            <strong>“Adversarial Recommender Systems: Attack, Defense, and Advances”</strong>
+          </a>
+          <span class="badge-area badge-security">Security</span> 
+          (In: Recommender Systems Handbook, 2023)<br/>
+          Authors: V. W. Anelli, <u>Y. Deldjoo</u>, L. Belli
+        </li>
+        <li>
+          <a href="https://dl.acm.org/doi/abs/10.1145/3439729" target="_blank" class="accent-link">
+            <strong>“A Survey on Adversarial Recommender Systems”</strong>
+          </a>
+          <span class="badge-area badge-security">Security</span> (ACM CSUR, 2021)<br/>
+          Authors: <u>Y. Deldjoo</u>, T. Di Noia, F. A. Merra
+        </li>
+        <li>
+          <a href="https://dl.acm.org/doi/abs/10.1145/3624733" target="_blank" class="accent-link">
+            <strong>“A Review of Modern Fashion Recommender Systems”</strong>
+          </a>
+          <span class="badge-area badge-fashion">Fashion</span>
+          <img src="img/placeholder_amazon_logo.png" alt="Amazon" class="company-logo" />
+          (ACM CSUR, 2023)<br/>
+          Authors: <u>Y. Deldjoo</u>, F. Nazary, J. McAuley, A. Ramisa, et al.
+        </li>
+      </ul>
+
+      <!-- Selected Journal & Conference Papers -->
+      <h4 class="section-heading">Selected Papers</h4>
+      <ul>
+        <li>
+          <a href="https://dl.acm.org/doi/abs/10.1145/3637528.3671474" target="_blank" class="accent-link">
+            <strong>“A Review of Modern Recommender Systems using Generative Models (Gen-RecSys)”</strong>
+          </a>
+          <span class="badge-area badge-genrec">Gen-RecSys</span>
+          <img src="img/placeholder_deepmind_logo.png" alt="DeepMind" class="company-logo" />
+          (KDD’24)<br/>
+          Authors: <u>Y. Deldjoo</u>, Z. He, J. McAuley, et al.
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/2403.05668" target="_blank" class="accent-link">
             <strong>“Understanding Biases in ChatGPT-based Recommender Systems”</strong>
           </a>
-          (Under Review, 2024)
-          <span class="badge-area badge-fairness">Fairness</span><br/>
+          <span class="badge-area badge-fairness">Fairness</span> (Under Review, 2024)<br/>
           Authors: <u>Y. Deldjoo</u>, V. W. Anelli, T. Di Noia
         </li>
         <li>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3397271.3401046" target="_blank">
+          <a href="https://arxiv.org/abs/2501.11759" target="_blank" class="accent-link">
+            <strong>“Poison-RAG: Adversarial Data Poisoning Attacks on Retrieval-Augmented Generation”</strong>
+          </a>
+          <span class="badge-area badge-security">Security</span> (Under Review, 2024)<br/>
+          Authors: <u>Y. Deldjoo</u>, F. A. Merra, T. Di Noia
+        </li>
+        <li>
+          <a href="https://dl.acm.org/doi/abs/10.1145/3397271.3401046" target="_blank" class="accent-link">
             <strong>“How Dataset Characteristics Affect the Robustness of Collaborative Recommendation Models”</strong>
           </a>
-          (SIGIR, 2020)
-          <span class="badge-area badge-security">Security</span><br/>
+          <span class="badge-area badge-security">Security</span> (SIGIR, 2020)<br/>
           Authors: <u>Y. Deldjoo</u>, V. W. Anelli, T. Di Noia, E. Di Sciascio
         </li>
         <li>
-          <a href="https://doi.org/10.1145/3460231.3473326" target="_blank">
+          <a href="https://doi.org/10.1145/3460231.3473326" target="_blank" class="accent-link">
             <strong>“Pursuing Privacy in Recommender Systems”</strong>
           </a>
-          (RecSys’21 Tutorial)
-          <span class="badge-area badge-privacy">Privacy</span><br/>
+          <span class="badge-area badge-privacy">Privacy</span> (RecSys’21 Tutorial)<br/>
           Authors: V. W. Anelli, L. Belli, <u>Y. Deldjoo</u>, T. Di Noia
         </li>
         <li>
-          <a href="https://doi.org/10.1007/s11257-023-09364-z" target="_blank">
+          <a href="https://doi.org/10.1007/s11257-023-09364-z" target="_blank" class="accent-link">
             <strong>“Fairness in Recommender Systems: Research Landscape and Future Directions”</strong>
           </a>
-          (UMUAI, 2023)
-          <span class="badge-area badge-fairness">Fairness</span><br/>
+          <span class="badge-area badge-fairness">Fairness</span> (UMUAI, 2023)<br/>
           Authors: <u>Y. Deldjoo</u>, T. Di Noia, F. A. Merra, M. S. Mansour
         </li>
         <li>
-          <a href="https://doi.org/10.1145/3511808.3551481" target="_blank">
+          <a href="https://doi.org/10.1145/3511808.3551481" target="_blank" class="accent-link">
             <strong>“Exploring the Impact of Temporal Bias in Point-of-Interest Recommendation”</strong>
           </a>
-          (RecSys, 2022)
-          <span class="badge-area badge-fairness">Fairness</span><br/>
+          <span class="badge-area badge-fairness">Fairness</span> (RecSys, 2022)<br/>
           Authors: H. A. Rahmani, M. Naghiaei, A. Tourani, <u>Y. Deldjoo</u>
         </li>
         <li>
-          <a href="https://doi.org/10.1016/j.eswa.2022.118368" target="_blank">
+          <a href="https://doi.org/10.1016/j.eswa.2022.118368" target="_blank" class="accent-link">
             <strong>“Visual Inspection of Fault Type and Zone Prediction in Electrical Grids”</strong>
           </a>
-          (ESWA, 2022)
-          <span class="badge-area badge-security">Security</span><br/>
+          <span class="badge-area badge-security">Security</span> (ESWA, 2022)<br/>
           Authors: C. Ardito, <u>Y. Deldjoo</u>, T. Di Noia, E. Di Sciascio, F. Nazary
         </li>
         <li>
-          <a href="https://doi.org/10.1145/3240323.3240407" target="_blank">
+          <a href="https://doi.org/10.1145/3240323.3240407" target="_blank" class="accent-link">
             <strong>“Audio-Visual Encoding of User Facial Expressions for Emotion-Aware Recommendations”</strong>
           </a>
-          (RecSys, 2018)
-          <span class="badge-area badge-multimedia">Multimedia</span><br/>
+          <span class="badge-area badge-multimedia">Multimedia</span> (RecSys, 2018)<br/>
           Authors: <u>Y. Deldjoo</u>, M. Schedl, P. Lops, T. Di Noia
         </li>
         <li>
-          <a href="https://doi.org/10.1007/s11257-019-09221-y" target="_blank">
+          <a href="https://doi.org/10.1007/s11257-019-09221-y" target="_blank" class="accent-link">
             <strong>“Movie Genome: Alleviating New Item Cold Start in Movie Recommendation”</strong>
           </a>
-          (UMUAI, 2019)
-          <span class="badge-area badge-multimedia">Multimedia</span><br/>
+          <span class="badge-area badge-multimedia">Multimedia</span> (UMUAI, 2019)<br/>
           Authors: <u>Y. Deldjoo</u>, M. F. Dacrema, M. G. Constantin, H. Eghbal-zadeh, et al.
+        </li>
+      </ul>
+
+      <!-- Additional Workshop Papers (Short Selection) -->
+      <h4 class="section-heading">Workshops &amp; Extended Abstracts</h4>
+      <ul>
+        <li>
+          <a href="https://arxiv.org/abs/2303.18136" target="_blank" class="accent-link">
+            <strong>“Smart Electrical Grids under the Lens of Adversarial Attacks”</strong>
+          </a>
+          <span class="badge-area badge-security">Security</span> (AdvML@KDD, 2022)<br/>
+          Authors: C. Ardito, <u>Y. Deldjoo</u>, et al.
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/2405.06270" target="_blank" class="accent-link">
+            <strong>“ChatGPT-HealthPrompt: Harnessing XAI in Prompt-Based Healthcare”</strong>
+          </a>
+          (ECAI, 2023)<br/>
+          Authors: F. Nazary, <u>Y. Deldjoo</u>, T. Di Noia
         </li>
       </ul>
     </div>
   </div>
 
-  <!-- Professional Activities & Education -->
+  <!-- Professional Activities & Education & Awards -->
   <div class="row mt-4">
     <div class="col-md-12">
       <h2 class="section-heading">Professional Activities</h2>
@@ -431,13 +467,14 @@
   <div class="footer">
     <p>
       &copy; <span id="year"></span> Dr. <u>Yashar Deldjoo</u> | 
-      <a href="mailto:deldjooy@acm.org">deldjooy@acm.org</a> | 
-      <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" target="_blank">Scholar</a> | 
-      <a href="https://twitter.com/yashardel" target="_blank">Twitter</a> | 
-      <a href="https://github.com/yasdel" target="_blank">GitHub</a>
+      <a href="mailto:deldjooy@acm.org" class="accent-link">deldjooy@acm.org</a> | 
+      <a href="https://scholar.google.com/citations?user=-C_x_hUAAAAJ" class="accent-link" target="_blank">Scholar</a> | 
+      <a href="https://twitter.com/yashardel" class="accent-link" target="_blank">Twitter</a> | 
+      <a href="https://github.com/yasdel" class="accent-link" target="_blank">GitHub</a>
     </p>
   </div>
-</div>
+
+</div> <!-- end .container -->
 
 <!-- Bootstrap JS -->
 <script
